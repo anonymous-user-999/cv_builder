@@ -1,0 +1,56 @@
+.label {
+  font-size: 1.33rem;
+  color: var(--text-color);
+  font-family: 'Poppins';
+  margin-bottom: 0.9rem;
+  display: flex;
+  align-items: baseline;
+}
+.optional {
+  font-size: 1rem;
+  color: #4c4c4c;
+}
+.input {
+  width: 100%;
+  min-height: 17rem;
+  background-color: #ebf9f5;
+  border-radius: 5px;
+  padding: 1.67rem ;
+  font-size: 1.2rem;
+  color: var(--text-color);
+  font-family: 'Poppins';
+  border: none;
+  outline: none;
+}
+
+.smallTextArea {
+  min-height: 11rem;
+  height: 11rem;
+}
+
+.inputWrapper {
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 2rem;
+  font-size: 1.33rem;
+  color: var(--app-color);
+}
+
+.smartTextContainer {
+  @apply flex items-center cursor-pointer;
+  position: relative;
+}
+.smartText {
+  font-size: 1.2rem;
+  color: var(--app-color);
+  font-family: 'Poppins';
+  margin-right: 5px;
+}
+.smartIcon {
+  height: 1.67rem;
+}

@@ -1,0 +1,126 @@
+.mainContainer {
+  width: 80vw;
+  margin: 0 auto;
+  margin-top: 4rem;
+  max-width: 90vw;
+}
+.searchPopup {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 5rem;
+  outline: none;
+}
+
+.searchPopupBar {
+  height: 6.75rem;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: var(--white);
+  border-radius: 8px;
+  margin-bottom: 3rem;
+}
+.searchPopupInputContainer {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background-color: transparent;
+  margin-top: 0;
+
+  margin-bottom: 0;
+}
+.searchPopupInput {
+  height: 100%;
+  padding-left: 7.25rem;
+  font-size: 1.67rem;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+.searchPopupSearchIcon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 3.25rem;
+  font-size: 1.5rem;
+  color: #676d7d;
+}
+.searchPopupCrossContainer {
+  @apply flex justify-center items-center;
+  height: 3.25rem;
+  width: 3.25rem;
+  background-color: var(--common-app-text);
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: 2.5rem;
+}
+.searchPopupBtn {
+  height: 4.67rem;
+  width: 17.3rem;
+  background-color: var(--app-color);
+  border-radius: 8px;
+  font-size: 1.67rem;
+  font-family: 'Poppins-Medium';
+  color: var(--white);
+  margin-right: 1rem;
+}
+.searchPopupTrakWrapper {
+  background-color: var(--white);
+}
+.documetMain {
+  padding: 1.8rem 1.5rem;
+  border-radius: 0.7rem;
+  background-color: var(--white);
+  font-family: 'Poppins';
+  color: var(--text-color);
+}
+.documentTitle {
+  font-size: 1.67rem;
+  font-family: 'Poppins-Medium';
+  margin-bottom: 0.5rem;
+}
+.documentDetailIcon {
+  font-size: 1.33rem;
+  margin-right: 0.25rem;
+}
+.documentDetailText {
+  font-size: 1rem;
+}
+@media (max-width: 768px) {
+  .searchPopupInputContainer {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .mainContainer {
+    margin-top: 3rem;
+  }
+  .searchPopupBtn {
+    width: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .searchPopupSearchIcon {
+    font-size: 1.2rem;
+    left: 1.33rem;
+  }
+  .searchPopupInput {
+    font-size: 1rem;
+    padding-left: 3.33rem;
+  }
+  .searchPopupBar {
+    height: 3.75rem;
+  }
+  .searchPopupBtn {
+    display: none;
+  }
+  .searchPopupCrossContainer {
+    height: 1.67rem;
+    width: 1.67rem;
+    font-size: 0.75rem;
+  }
+  .searchPopupBar {
+    margin-bottom: 1.67rem;
+  }
+}

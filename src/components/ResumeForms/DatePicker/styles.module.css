@@ -1,0 +1,37 @@
+.label {
+  font-size: 1.33rem;
+  color: var(--text-color);
+  font-family: 'Poppins';
+  margin-bottom: 0.9rem;
+}
+.inputWrapper input {
+  width: 100%;
+  height: 5rem;
+  background-color: #ebf9f5;
+  border-radius: 5px;
+  padding-left: 1.67rem;
+  font-size: 1.2rem;
+  color: var(--text-color);
+  font-family: 'Poppins';
+  border: none;
+  outline: none;
+  position: relative;
+}
+
+.inputWrapper {
+  position: relative;
+}
+.error {
+  font-size: 1rem;
+  color: var(--status-bad);
+  font-family: 'Poppins';
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 2rem;
+  font-size: 1.33rem;
+  color: var(--app-color);
+}

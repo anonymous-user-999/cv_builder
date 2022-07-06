@@ -1,0 +1,88 @@
+.modalContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 90vw;
+  width: 86rem;
+  padding: 8vh 8vw;
+
+  background-color: var(--white);
+  border-radius: 1rem;
+  box-shadow: 0px 8px 22px #00b8841e;
+  outline: none;
+  @apply flex justify-center items-center;
+}
+.heading {
+  font-size: 3.75rem;
+  color: var(--text-color);
+  font-family: 'Poppins-Bold';
+  margin-bottom: 4rem;
+  line-height: 1.2;
+}
+.modalMain {
+  width: 47rem;
+  max-width: 90%;
+}
+.inputContainer {
+  margin-bottom: 4rem;
+}
+.inputContainer > label {
+  margin-bottom: 0.9rem;
+  font-size: 1.33rem;
+}
+.inputContainer > label > span:first-child {
+  font-size: 1.33rem;
+}
+.inputContainer input {
+  height: 5rem;
+  padding-left: 1.33rem;
+  padding-right: 1.33rem;
+}
+.btnBack {
+  height: 4.2rem;
+  width: 30%;
+  background-color: #ccf1e6;
+  border-radius: 8px;
+  font-size: 1.33rem;
+  color: var(--text-color);
+  font-family: 'Poppins';
+  @apply inline-flex justify-center items-center mr-5;
+}
+.btnSignIn {
+  height: 4.2rem;
+  width: 60%;
+  background-color: var(--app-color);
+  border-radius: 8px;
+  font-size: 1.33rem;
+  color: var(--white);
+  font-family: 'Poppins';
+}
+
+@media (max-width: 767px) {
+  .heading {
+    font-size: 1.67rem;
+    margin-bottom: 2.5rem;
+    text-align: left;
+  }
+
+  .inputContainer > label > span:first-child {
+    font-size: 1.2rem;
+  }
+  .btnBack {
+    width: 35%;
+    height: 3.75rem;
+  }
+  .btnSignIn {
+    width: 65%;
+    height: 3.75rem;
+  }
+  .inputContainer {
+    margin-bottom: 2.5rem;
+  }
+  .inputContainer input {
+    height: 3.75rem;
+    padding-left: 1.1rem;
+    padding-right: 1.1rem;
+  }
+}

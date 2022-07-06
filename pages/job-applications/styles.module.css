@@ -1,0 +1,558 @@
+.header
+{
+  padding-bottom: 1.5rem;
+}
+.mainContainer {
+  width: 80vw;
+  margin: 0 auto;
+  margin-top: 4rem;
+}
+
+@media (max-width: 1024px) {
+  .mainContainer {
+    width: 90vw;
+  }
+}
+.overlay {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  background-color: #4c4c4c33;
+  z-index: 50;
+  min-height: -webkit-fill-available;
+}
+
+.documetnsHeader {
+  @apply flex justify-between items-center;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid var(--common-app-text);
+  margin-bottom: 3.34rem;
+}
+.documentsHeading {
+  font-size: 3rem;
+  font-weight: 700;
+  font-family: 'Poppins-Bold';
+  color: var(--text-color);
+  line-height: 1.1;
+  margin: 0;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+.imageContainer {
+  @apply flex justify-center items-center;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 5px;
+  box-shadow: 0px 16px 44px 0px rgba(0, 184, 132, 0.12);
+  -webkit-box-shadow: 0px 16px 44px 0px rgba(0, 184, 132, 0.12);
+  -moz-box-shadow: 0px 16px 44px 0px rgba(0, 184, 132, 0.12);
+}
+.mainImg {
+  height: 100%;
+}
+
+.mainHeading {
+  font-size: 2.9rem;
+  font-weight: 700;
+  font-family: 'Poppins-Bold';
+  color: var(--text-color);
+  margin: 0;
+  margin-bottom: 3rem;
+  line-height: 1;
+}
+.contentContainr {
+  padding: 0 12%;
+}
+.mainPara {
+  font-size: 2.1rem;
+  color: #676d7d;
+  line-height: 1.3;
+  margin: 0;
+  font-family: 'Poppins';
+}
+
+.mainButton {
+  margin-top: 2.9rem;
+  height: 4.6rem;
+  width: 24.12rem;
+  background-color: #fca84e;
+  border-radius: 8px;
+  font-size: 16px;
+  color: var(--white);
+  font-family: 'Poppins';
+}
+
+.inputContainer {
+  position: relative;
+  height: 4.67rem;
+  width: 32rem;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  margin-right: 1.67rem;
+}
+.inputSearch {
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 1.33rem;
+  color: #676d7d;
+  font-family: 'Poppins';
+  padding-left: 3.8rem;
+  background-color: transparent;
+  border-radius: 8px;
+}
+.searchIcon {
+  color: #676d7d;
+  position: absolute;
+  top: 50%;
+  left: 1.67rem;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+}
+.starContainer {
+  @apply flex justify-center items-center;
+  height: 4.2rem;
+  width: 4.67rem;
+  background-color: #fca84e21;
+  border-radius: 8px;
+  margin-right: 1.67rem;
+}
+.star {
+  position: relative;
+  height: 1.67rem;
+  width: 1.67rem;
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+  background-color: #fca84e;
+}
+.starInside {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+  background-color: #fff;
+}
+.filterContainer {
+  @apply flex justify-center items-center;
+  height: 4.2rem;
+  width: 10.3rem;
+  background-color: #ebf9f5;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.filterIcon {
+  font-size: 1.2rem;
+  color: var(--app-color);
+  margin-right: 8px;
+}
+.filterText {
+  font-size: 1.33rem;
+  color: var(--app-color);
+  font-family: 'Poppins';
+}
+
+.trakWrapper {
+  display: grid;
+  grid-template-columns: 2.8fr 1fr;
+  padding: 2rem;
+  border: 1px solid var(--common-app-text);
+  border-radius: 8px;
+  margin-bottom: 1.67rem;
+  cursor: pointer;
+}
+.trakHeading {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  font-family: 'Poppins-Medium';
+  line-height: 1.2;
+  margin: 0;
+}
+.trackEmail {
+  font-size: 1rem;
+  color: #676d7d;
+  font-family: 'Poppins';
+  line-height: 2;
+}
+.emailOpen {
+  font-size: 1.2rem;
+  color: var(--app-color);
+  line-height: 1;
+  font-family: 'Poppins';
+  margin-right: 5px;
+}
+.trackSubContainer {
+  @apply flex justify-between items-center;
+}
+.emailNumber {
+  @apply flex items-center justify-center;
+  font-size: 0.9rem;
+  color: var(--white);
+  font-family: 'Poppins';
+  height: 1.67rem;
+  width: 1.67rem;
+  background-color: var(--app-color);
+  border-radius: 50%;
+  line-height: 1;
+  padding-top: 3px;
+}
+.trackDetail {
+  @apply flex items-center;
+  padding-right: 1.67rem;
+  border-right: 1px solid var(--common-app-text);
+  margin-right: 1.67rem;
+}
+.trackDetailFile {
+  color: #3e67f3;
+  font-size: 1.3rem;
+  margin-right: 0.67rem;
+}
+.trackDetailIcon {
+  font-size: 1.3rem;
+  margin-right: 0.67rem;
+}
+.trackDetailCalendar {
+  color: #fd71af;
+  font-size: 1.3rem;
+  margin-right: 0.67rem;
+}
+.trackDetailText {
+  font-size: 1.25rem;
+  color: var(--text-color);
+  font-family: 'Poppins';
+}
+.starResponsive {
+  display: none;
+}
+.trackDetailImg {
+  height: 1.33rem;
+  width: 1.33rem;
+  margin-right: 0.75rem;
+}
+.trackDetails {
+  @apply flex items-center justify-start;
+  min-width: 35rem;
+}
+.trackCheckContainer {
+  @apply flex justify-center items-center;
+  height: 1.33rem;
+  width: 1.33rem;
+  margin-right: 0.75rem;
+  background-color: var(--app-color);
+  border-radius: 50%;
+}
+.trackCheck {
+  font-size: 8px;
+  color: var(--white);
+}
+.trackContentContainer {
+  @apply flex items-center;
+}
+.trackDash {
+  font-size: 1.5rem;
+  color: #676d7d;
+  font-family: 'Poppins-Medium';
+}
+.borderNone {
+  border: none;
+  margin-right: 0;
+  padding-right: 0;
+}
+.trackEmailDetails {
+  @apply flex justify-between items-center;
+  padding-left: 15%;
+}
+.trackOpenDetails {
+  font-size: 1.33rem;
+  color: var(--text-color);
+  font-family: 'Poppins';
+  cursor: pointer;
+}
+.trackRightArrow {
+  color: var(--app-color);
+  margin-left: 8px;
+}
+
+/* Search Popup  */
+.searchPopup {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 5rem;
+  outline: none;
+}
+
+.searchPopupBar {
+  height: 6.75rem;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: var(--white);
+  border-radius: 8px;
+  margin-bottom: 3rem;
+}
+.searchPopupInputContainer {
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.searchPopupInput {
+  height: 100%;
+  padding-left: 7.25rem;
+  font-size: 1.67rem;
+}
+.searchPopupSearchIcon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 3.25rem;
+  font-size: 1.5rem;
+  color: #676d7d;
+}
+.searchPopupCrossContainer {
+  @apply flex justify-center items-center;
+  height: 3.25rem;
+  width: 3.25rem;
+  background-color: var(--common-app-text);
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: 2.5rem;
+}
+.searchPopupBtn {
+  height: 4.67rem;
+  width: 17.3rem;
+  background-color: var(--app-color);
+  border-radius: 8px;
+  font-size: 1.67rem;
+  font-family: 'Poppins-Medium';
+  color: var(--white);
+  margin-right: 1rem;
+}
+.searchPopupTrakWrapper {
+  background-color: var(--white);
+}
+
+/* Responsiveness  */
+
+@media (max-width: 1550px) {
+  .trackDash {
+    display: none;
+  }
+  .trackContentContainer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 1400px) {
+  .contentContainr {
+    padding: 0 5%;
+  }
+  .mainPara {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 1250px) {
+  .trackSubContainer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .trackDetails {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-width: auto;
+    margin-top: 2.5rem;
+  }
+  .trakWrapper {
+    grid-template-columns: 1.5fr 1fr;
+    align-items: flex-start;
+  }
+  .trackEmailDetails {
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 100%;
+    padding-left: 10%;
+  }
+  .starResponsive {
+    display: block;
+  }
+  .starResponsiveXL {
+    display: none;
+  }
+  .emailNumber {
+    margin-right: 1rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .main {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+    margin-bottom: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .imageContainer {
+    padding: 1.25rem;
+  }
+  .mainContainer {
+    margin-top: 3.3rem;
+  }
+  .documentsHeading {
+    font-size: 1.67rem;
+  }
+  .imageContainer {
+    width: 100%;
+  }
+  .headingWrapper {
+    margin-bottom: 0;
+  }
+  .contentContainr {
+    padding: 0;
+  }
+  .mainHeading {
+    font-size: 1.5rem;
+    font-family: 'Poppins-Medium';
+    font-weight: 500;
+    margin-bottom: 0.6rem;
+  }
+  .mainPara {
+    font-size: 1.4rem;
+  }
+  .mainButton {
+    width: 100%;
+    font-size: 1.2rem;
+    height: 3.75rem;
+  }
+
+  /* Login Responsiveness  */
+  .trakWrapper {
+    position: relative;
+    grid-template-columns: 1fr;
+  }
+  .trackOpenDetails {
+    display: none;
+  }
+  .emailOpen {
+    display: none;
+  }
+  .trackEmailDetails {
+    position: absolute;
+    right: 2rem;
+    top: 2.5rem;
+  }
+  .trackContentContainer {
+    max-width: calc(100% - 6rem);
+  }
+  .trakHeading {
+    font-size: 1.5rem;
+  }
+  .trackEmail {
+    font-size: 1rem;
+  }
+  .trackDetailText,
+  .trackDetailFile,
+  .trackDetailCalendar {
+    font-size: 1rem;
+  }
+  .trackDetailImg,
+  .trackCheckContainer {
+    height: 1rem;
+    width: 1rem;
+  }
+  .trackCheck {
+    font-size: 6px;
+  }
+  .inputContainer {
+    width: 100%;
+    margin-top: -1.67rem;
+    margin-bottom: 1.67rem;
+  }
+  .trackDetail {
+    padding-right: 1rem;
+    margin-right: 1rem;
+  }
+  .starContainer {
+    @apply flex justify-center items-center;
+    height: 3.2rem;
+    width: 3.67rem;
+    background-color: #fca84e21;
+    border-radius: 4px;
+    margin-right: 1rem;
+  }
+  .star {
+    height: 1.3rem;
+    width: 1.3rem;
+  }
+  .filterContainer {
+    height: 3.2rem;
+    width: 8.3rem;
+    border-radius: 4px;
+  }
+  .filterIcon {
+    font-size: 1rem;
+    margin-right: 6px;
+  }
+  .filterText {
+    font-size: 1rem;
+  }
+  .searchPopupInputContainer {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .searchPopupSearchIcon {
+    font-size: 1.2rem;
+    left: 1.33rem;
+  }
+  .searchPopupInput {
+    font-size: 1rem;
+    padding-left: 3.33rem;
+  }
+  .searchPopupBar {
+    height: 3.75rem;
+  }
+  .searchPopupBtn {
+    display: none;
+  }
+  .searchPopupCrossContainer {
+    height: 1.67rem;
+    width: 1.67rem;
+    font-size: 0.75rem;
+  }
+  .searchPopupBar {
+    margin-bottom: 1.67rem;
+  }
+}

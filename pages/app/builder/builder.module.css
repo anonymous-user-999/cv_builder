@@ -1,0 +1,24 @@
+.container {
+  overflow-y: auto;
+  @apply relative h-screen w-screen overflow-hidden flex flex-1 items-start justify-center;
+}
+
+.left {
+  box-shadow: var(--left-shadow);
+  max-width: calc(100vw / 2);
+  /* flex-shrink: 1; */
+  @apply flex flex-1 bg-primary-50;
+}
+
+.center {
+  background-color: #4c5c63;
+  @apply flex-1 z-0 h-screen overflow-auto flex flex-col items-center justify-center justify-items-center;
+}
+
+.right {
+  max-width: calc(100vw / 4);
+  box-shadow: var(--right-shadow);
+  flex-shrink: 1;
+
+  @apply bg-primary-50 absolute top-0 bottom-0 right-0 z-10;
+}

@@ -1,0 +1,126 @@
+.modal {
+  width: 40rem;
+  position: absolute;
+  top: 5rem;
+  right: 0;
+  z-index: 100;
+}
+.filterContent {
+  background-color: var(--white);
+  padding: 2.3rem 3.2rem;
+  border-radius: 5px;
+}
+.header {
+  @apply flex justify-between items-center;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid var(--common-app-text);
+  margin-bottom: 3.3rem;
+}
+.heading {
+  font-size: 1.67rem;
+  color: var(--text-color);
+  font-family: 'Poppins-Medium';
+  margin: 0;
+  line-height: 1;
+}
+.crossContainer {
+  @apply flex justify-center items-center;
+  height: 2.2rem;
+  width: 2.2rem;
+  border-radius: 8px;
+  background-color: #676d7d12;
+  cursor: pointer;
+}
+.cross {
+  font-size: 1rem;
+  color: #676d7d;
+}
+.main {
+  @apply flex items-center;
+  margin-bottom: 3rem;
+  cursor: pointer;
+}
+.check {
+  height: 2rem;
+  width: 2rem;
+  border: 1px solid var(--app-color);
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+.text {
+  font-size: 1.2rem;
+  color: var(--text-color);
+  font-family: 'Poppins';
+}
+.checked {
+  border: 7px solid var(--app-color);
+}
+.btnOutline {
+  height: 3.75rem;
+  width: 11.5rem;
+  border: 1px solid var(--common-app-text);
+  border-radius: 5px;
+  font-size: 1.33rem;
+  color: var(--text-color);
+  font-family: 'Poppins';
+  background-color: transparent;
+  margin-right: 1.67rem;
+}
+.btnFill {
+  height: 3.75rem;
+  width: 11.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.33rem;
+  background-color: var(--app-color);
+  color: var(--white);
+  font-family: 'Poppins';
+}
+
+@media (max-width: 767px) {
+  .modal {
+    width: 90vw;
+    position: fixed;
+    bottom: 5vh;
+    left: 50%;
+    top: unset;
+    transform: translateX(-50%);
+  }
+  .filterFields {
+    max-height: 60vh;
+    overflow: auto;
+  }
+  .main {
+    @apply flex items-center;
+    height: 4.2rem;
+    border: 1px solid #ebf9f5;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+  }
+  .datesContainer {
+    padding-bottom: 0;
+    border: 0;
+  }
+  .filterContent {
+    background-color: var(--white);
+    padding: 2.5rem 1rem;
+    padding-bottom: 0;
+    border-radius: 5px;
+  }
+  .filterfooter {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+  }
+  .btnOutline {
+    background-color: #ebf9f5;
+    color: var(--text-color);
+    width: 48%;
+    height: 3.75rem;
+  }
+  .btnFill {
+    width: 48%;
+    height: 3.75rem;
+  }
+}

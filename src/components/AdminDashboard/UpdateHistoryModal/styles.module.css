@@ -1,0 +1,64 @@
+.modalMain {
+  outline: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--white);
+  border: 1px solid #eff2ff;
+  border-radius: 5px;
+  width: 484px;
+  padding: 2.3rem 3.2rem;
+  max-height: 90vh;
+  overflow: auto;
+}
+.header {
+  @apply flex items-center justify-between;
+  margin-bottom: 2.3rem;
+}
+.heading {
+  font-size: 1.67rem;
+  color: var(--text-color);
+  font-family: 'Poppins-Medium';
+}
+.cross {
+  @apply flex items-center justify-center;
+  height: 2.2rem;
+  width: 2.2rem;
+  border-radius: 8px;
+  background-color: #676d7d12;
+  font-size: 1rem;
+  color: #676d7d;
+  cursor: pointer;
+}
+.viewer {
+  @apply flex justify-between items-center;
+}
+.viewer:not(:last-child) {
+  margin-bottom: 1.67rem;
+}
+.device {
+  font-size: 1.2rem;
+  color: #676d7d;
+  margin-right: 0.8rem;
+}
+.name {
+  font-size: 1.2rem;
+  color: #676d7d;
+  font-family: 'Poppins';
+}
+.time {
+  font-size: 1.2rem;
+  color: #676d7d;
+  font-family: 'Poppins';
+}
+
+@media (max-width: 768px) {
+  .modalMain {
+    height: 100vh;
+    width: 100vw;
+    padding: 2rem;
+    max-height: 100vh;
+    overflow: auto;
+  }
+}

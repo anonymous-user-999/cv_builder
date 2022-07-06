@@ -1,0 +1,126 @@
+.container {
+  @apply flex justify-center items-center;
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+}
+.cross {
+  position: absolute;
+  right: 3.3rem;
+  top: 3.3rem;
+  font-size: 1.67rem;
+  color: var(--text-color);
+  cursor: pointer;
+}
+.main {
+  padding: 4rem 2rem;
+}
+.heading {
+  font-size: 3.75rem;
+  color: var(--text-color);
+  font-family: 'Poppins-Bold';
+  margin-bottom: 2rem;
+  line-height: 1.2;
+  text-align: center;
+}
+.subHeading {
+  font-size: 2rem;
+  font-family: 'Poppins';
+  color: #676d7d;
+  line-height: 1.2;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+.inputsWrapper {
+  max-width: 54rem;
+  padding: 5rem 6rem;
+  background-color: var(--white);
+  border-radius: 0.9rem;
+  box-shadow: 0px 8px 22px #00b8841e;
+  margin-bottom: 4rem;
+}
+.inputContainer {
+  margin-bottom: 2rem;
+}
+.inputContainer > label {
+  margin-bottom: 0.9rem;
+  font-size: 1.33rem;
+}
+.inputContainer > label > span:first-child {
+  font-size: 1.33rem;
+}
+.inputContainer input {
+  height: 5rem;
+  padding-left: 1.33rem;
+  padding-right: 1.33rem;
+}
+.forgetPassword {
+  font-size: 1.33rem;
+  color: var(--text-color);
+  font-family: 'Poppins';
+  cursor: pointer;
+}
+.btnsContainer {
+  display: flex;
+}
+.btnBack {
+  height: 4.2rem;
+  width: 10.2rem;
+  background-color: #ccf1e6;
+  border-radius: 8px;
+  font-size: 1.33rem;
+  color: var(--text-color);
+  font-family: 'Poppins';
+  @apply inline-flex justify-center items-center mr-5;
+}
+.btnSignIn {
+  height: 4.2rem;
+  width: 17.33rem;
+  background-color: var(--app-color);
+  border-radius: 8px;
+  font-size: 1.33rem;
+  color: var(--white);
+  font-family: 'Poppins';
+}
+
+@media (max-width: 767px) {
+  .heading {
+    font-size: 2.4rem;
+    margin-bottom: 1.25rem;
+  }
+  .subHeading {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+  }
+  .inputsWrapper {
+    width: 100%;
+    box-shadow: none;
+    padding: 4.5rem 0;
+    margin-bottom: 0;
+  }
+  .forgetPassword {
+    font-size: 1rem;
+  }
+  .inputContainer > label > span:first-child {
+    font-size: 1.2rem;
+  }
+  .inputContainer input {
+    height: 3.75rem;
+    padding-left: 1.1rem;
+    padding-right: 1.1rem;
+  }
+  .btnsContainer {
+    justify-content: space-between;
+  }
+  .btnBack {
+    height: 3.75rem;
+    width: 35%;
+  }
+  .btnSignIn {
+    height: 3.75rem;
+    width: 65%;
+  }
+  .inputContainer {
+    margin-bottom: 1.25rem;
+  }
+}

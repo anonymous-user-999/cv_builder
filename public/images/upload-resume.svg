@@ -1,0 +1,17 @@
+<svg id="icon-upload-resume" xmlns="http://www.w3.org/2000/svg" width="28" height="32" viewBox="0 0 28 32">
+  <g id="File_60_">
+    <g id="Group_741" data-name="Group 741">
+      <path id="Path_375" data-name="Path 375" d="M26,0H2A2,2,0,0,0,0,2V30a2,2,0,0,0,2,2H19l9-9V2A2,2,0,0,0,26,0Z" fill="#00b884"/>
+    </g>
+  </g>
+  <g id="Corner_30_" transform="translate(19 23)">
+    <g id="Group_742" data-name="Group 742">
+      <path id="Path_376" data-name="Path 376" d="M40,46a2,2,0,0,0-2,2v7l9-9Z" transform="translate(-38 -46.001)" fill="#ccf1e6"/>
+    </g>
+  </g>
+  <g id="Arrow_2_" transform="translate(10.021 8)">
+    <g id="Group_743" data-name="Group 743">
+      <path id="Path_377" data-name="Path 377" d="M27.727,19.239l-2.92-2.93a1.016,1.016,0,0,0-.575-.286.991.991,0,0,0-.925.279c-.008.008-.019.012-.027.021l-2.933,2.922a1.035,1.035,0,0,0,1.467,1.461l1.208-1.2V25a1,1,0,1,0,2,0V19.455L26.266,20.7a1.034,1.034,0,1,0,1.46-1.465Z" transform="translate(-20.042 -16)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

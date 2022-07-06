@@ -1,0 +1,76 @@
+.switch {
+  display: inline-block;
+}
+.switch > label {
+  line-height: 34px;
+  margin-left: 12px;
+}
+.span {
+  position: relative;
+  width: 60px;
+  height: 34px;
+  float: left;
+}
+.input {
+  display: none;
+}
+.input:checked + .slider {
+  background-color: var(--app-color);
+}
+.input:checked + .slider:before {
+  transform: translateX(26px);
+}
+.input:focus + .slider {
+  box-shadow: 0 0 1px var(--app-color);
+}
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  border: 0;
+  outline: none;
+  background-color: #dcdcdc;
+  transition: 0.4s;
+  border-radius: 34px;
+  cursor: pointer;
+}
+.slider:focus,
+.slider:active,
+.slider:visited {
+  border: none;
+  outline: none;
+}
+.slider:before {
+  position: absolute;
+  content: '';
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #ffffff;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+@media (max-width: 767px) {
+  .switch > label {
+    line-height: 20px;
+    margin-left: 12px;
+  }
+  .slider:before {
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 2px;
+  }
+  .input:checked + .slider:before {
+    transform: translateX(18px);
+  }
+  .span {
+    width: 40px;
+    height: 20px;
+  }
+}

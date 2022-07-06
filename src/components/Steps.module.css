@@ -1,0 +1,35 @@
+.stepscontainer {
+  @apply flex flex-row self-start items-center;
+}
+
+.step {
+  @apply flex items-center mr-5;
+}
+
+.stepnumber {
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  color: black;
+  background-color: var(--common-app-text);
+  @apply flex items-center justify-center;
+}
+
+.selected {
+  background-color: var(--app-color);
+  color: var(--white);
+}
+
+.chevron {
+  color: var(--common-app-text);
+  @apply mx-5;
+}
+
+.selectedchevron {
+  color: var(--app-color);
+  @apply mx-5;
+}
+
+.steptitle {
+  font-size: 14px;
+}

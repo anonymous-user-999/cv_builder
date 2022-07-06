@@ -1,0 +1,77 @@
+
+
+.circle {
+  left: 14px;
+
+  @apply absolute bg-primary-900 rounded-full w-6 h-6;
+}
+
+div.circle + input {
+  padding-left: 44px;
+}
+
+.myinput:hover {
+  border: 1px solid var(--app-color);
+}
+
+.myinput:focus {
+  border: 1px solid var(--app-color);
+}
+
+.read-only input:hover {
+  cursor: default;
+  border: 1px solid var(--app-color);
+}
+
+.read-only input:focus {
+  border: 1px solid var(--app-color);
+}
+
+.read-only div {
+  @apply absolute rounded-r top-0 right-0 bottom-0 w-20 flex justify-center items-center bg-primary-50;
+}
+
+.read-only div:hover {
+  @apply bg-primary-100;
+}
+
+.read-only div:focus {
+  @apply outline-none;
+}
+
+.phone {
+  border: 1px solid var(--app-color);
+  background-color: white !important;
+  @apply rounded;
+  /* background-color: #ebf9f5; */
+}
+
+.phoneinput {
+  /* background-color: #ebf9f5 !important; */
+  border: 0px solid transparent !important;
+  background-color: white !important;
+}
+
+.flag {
+  background-color: transparent !important;
+  /* background-color: #ebf9f5 !important; */
+  background-color: white !important;
+  border: 0px solid transparent !important;
+}
+
+.countries {
+  z-index: 1000;
+}
+
+.search:first-child {
+  padding: 10px 10px 6px 10px !important;
+}
+
+.search > input {
+  background-color: #ebf9f5 !important;
+  border-radius: 0;
+  margin-left: 0 !important;
+}
+.inputError {
+  font-size: 12px;
+}

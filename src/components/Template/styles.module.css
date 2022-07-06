@@ -1,0 +1,203 @@
+.template {
+  width: 210mm;
+  min-height: 297mm;
+  /* min-width: 210mm; */
+  background: var(--white);
+  padding: 1cm;
+  color: var(--app-color);
+  font-family: 'Poppins';
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 2.2fr;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.profile {
+  height: 12rem;
+  width: 12rem;
+  border-radius: 100%;
+}
+
+.name {
+  font-size: 2.5rem;
+  font-family: 'Poppins-SemiBold';
+  margin-bottom: 0.75rem;
+}
+.post {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  font-family: 'Poppins-Medium';
+}
+
+.about {
+  font-size: 1.2rem;
+  color: var(--text-color);
+}
+.main {
+  display: grid;
+  grid-template-columns: 1fr 2.2fr;
+  gap: 1rem;
+}
+.connection {
+  @apply flex items-center;
+  margin-bottom: 1rem;
+}
+.connectionIcon {
+  @apply flex items-center justify-center;
+  height: 1.75rem;
+  width: 1.75rem;
+  font-size: 0.9rem;
+  color: var(--app-color);
+  background-color: #00b88421;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+.connectionText {
+  font-size: 1rem;
+  color: var(--text-color);
+}
+
+.skillsContainer {
+  margin-top: 2rem;
+}
+.skillHeading {
+  font-size: 1.5rem;
+  font-family: 'Poppins-Medium';
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.skillsWrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.skill {
+  padding: 0.5rem 1.25rem;
+  background-color: var(--common-app-text);
+  border-radius: 1rem;
+  font-size: 1rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-color);
+  line-height: 1;
+}
+
+.jobTitle {
+  font-size: 1.25rem;
+  color: var(--text-color);
+  font-family: 'Poppins-Medium';
+  margin-bottom: 0.25rem;
+}
+.companyName {
+  font-family: 'Poppins-Medium';
+}
+
+.duration {
+  font-size: 0.9rem;
+}
+
+.list {
+  margin-top: 0.25rem;
+  margin-bottom: 1rem;
+}
+.listItem {
+  @apply flex items-start;
+  margin-bottom: 0.25rem;
+}
+.listDot {
+  height: 0.5rem;
+  width: 0.5rem;
+  padding: 3px;
+  border-radius: 50%;
+  background-color: var(--app-color);
+  margin-right: 0.5rem;
+  margin-top: 6px;
+}
+
+.listContent {
+  font-size: 0.9rem;
+  color: var(--text-color);
+}
+
+@media (max-width: 869px) {
+  .template {
+    padding: 4vw;
+    min-height: 129vw;
+  }
+  .header {
+    gap: 1.4vw;
+    margin-bottom: 4.15vw;
+  }
+  .profile {
+    height: 16.5vw;
+    width: 16.5vw;
+  }
+  .name {
+    font-size: 3.5vw;
+    margin-bottom: 1.05vw;
+  }
+  .post {
+    font-size: 2.1vw;
+  }
+  .about {
+    font-size: 1.62vw;
+  }
+  .connection {
+    margin-bottom: 1.4vw;
+  }
+  .connectionIcon {
+    height: 2.45vw;
+    width: 2.45vw;
+    font-size: 1.2vw;
+    margin-right: 0.7vw;
+  }
+  .connectionText {
+    font-size: 1.4vw;
+  }
+  .skillHeading {
+    font-size: 2.1vw;
+    margin-bottom: 1.05vw;
+  }
+  .jobTitle {
+    font-size: 1.75vw;
+    margin-bottom: 0.35vw;
+  }
+  .companyName {
+    font-size: 1.16vw;
+  }
+  .duration {
+    font-size: 1.18vw;
+  }
+  .listContent {
+    font-size: 1.18vw;
+  }
+  .skillsContainer {
+    margin-top: 2.78vw;
+  }
+  .skill {
+    padding: 0.7vw 1.75vw;
+    border-radius: 1.4vw;
+    font-size: 1.4vw;
+    margin-right: 0.7vw;
+    margin-bottom: 0.7vw;
+  }
+  .list {
+    margin-top: 0.35vw;
+    margin-bottom: 1.4vw;
+  }
+  .listItem {
+    margin-bottom: 0.35vw;
+  }
+  .listDot {
+    height: 0.7vw;
+    width: 0.7vw;
+    padding: 0.35vw;
+    margin-right: 0.7vw;
+    margin-top: 0.7vw;
+  }
+}

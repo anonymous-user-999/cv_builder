@@ -1,0 +1,45 @@
+.listItem {
+  border: 1px solid var(--common-app-text);
+  border-radius: 5px;
+  @apply flex flex-1 items-center justify-between px-6 py-5;
+}
+
+.listItem:first-child {
+}
+
+.absolutebtn { 
+  /* top-9 bottom-9 */
+  cursor: pointer !important;
+  @apply absolute flex justify-center cursor-pointer;
+}
+
+.testing {
+  cursor: pointer !important;
+}
+
+.editItem {
+  border: 1px solid var(--common-app-text);
+  border-radius: 5px;
+  @apply flex flex-1 flex-col px-6 py-5;
+}
+
+/* .menu {
+  @apply opacity-0;
+  @apply transition-opacity duration-200 ease-in-out;
+} */
+/* 
+.listItem:hover .menu {
+  @apply opacity-100;
+  @apply transition-opacity duration-200 ease-in-out;
+}
+
+.toggle-button {
+  @apply flex items-center justify-center;
+} */
+.popovercontainer {
+  max-height: 40%;
+  min-width: 20vw;
+  max-width: 25vw;
+  overflow-y: auto;
+  @apply p-5;
+}

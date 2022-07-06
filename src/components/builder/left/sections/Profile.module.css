@@ -1,0 +1,6 @@
+.showmore {
+  color: var(--app-color);
+  background-color: white;
+  border-width: 0 !important;
+  @apply mb-5;
+}

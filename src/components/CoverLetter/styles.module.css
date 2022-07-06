@@ -1,0 +1,71 @@
+@page {
+  size: 7in 9.25in;
+  margin: 27mm 16mm 27mm 16mm;
+}
+
+div.chapter, div.appendix {
+  page-break-after: always;
+}
+
+div.titlepage {
+  page: blank;
+}
+
+.letter {
+  width: 210mm;
+  min-height: 297mm;
+  /* min-width: 210mm; */
+  background: var(--white);
+  padding: 1cm;
+  color: var(--app-color);
+  font-family: 'Poppins';
+  max-width: 100%;
+}
+
+.data {
+  white-space: pre-line;
+  color: var(--text-color);
+  font-family: 'Poppins';
+  font-size: 1rem;
+}
+
+.heading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.hiringManager {
+  font-size: 1.2rem;
+  color: var(--text-color);
+  font-weight: 600;
+}
+
+@media (max-width: 869px) {
+  .letter {
+    padding: 4vw;
+    min-height: 129vw;
+  }
+  .heading {
+    font-size: 2.1vw;
+    margin-top: 5.75vw;
+    margin-bottom: 0.7vw;
+  }
+  .hiringManager {
+    font-size: 1.7vw;
+  }
+
+  .data {
+    font-size: 1.4vw;
+  }
+}
+
+@media print {
+  @page{
+      width: 21cm;
+      height: 29.7cm;
+      margin: 30mm 45mm 30mm 45mm;
+      /* change the margins as you want them to be. */
+ }
+}

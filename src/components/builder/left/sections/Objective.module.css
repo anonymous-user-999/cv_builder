@@ -1,0 +1,7 @@
+.popovercontainer {
+  max-height: 40%;
+  min-width: 20vw;
+  max-width: 25vw;
+  overflow-y: auto;
+  @apply p-5;
+}

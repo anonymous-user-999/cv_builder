@@ -1,0 +1,429 @@
+.mainContainer {
+  width: 80vw;
+  margin: 0 auto;
+  margin-top: 4rem;
+}
+
+@media (max-width: 1024px) {
+  .mainContainer {
+    width: 90vw;
+  }
+}
+
+.extensionContainer {
+  @apply px-20 py-8;
+  background-color: var(--text-color);
+  border-radius: 1rem;
+  color: var(--white);
+  margin-bottom: 5rem;
+}
+.chrome {
+  height: 2.8rem;
+  margin-right: 1rem;
+}
+.extensionPara { 
+  font-size: 1.5rem;
+  font-family: 'Poppins';
+}
+.extensionButton { 
+  height: 3rem;
+  width: 11rem; 
+  border-radius: 5px;
+  background-color: var(--app-color);
+  font-size: 1.2rem;
+  font-family: 'Poppins';
+}
+.extensionButton:hover
+{
+  background: #ffa334;
+}
+.documetnsHeader {
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid var(--common-app-text);
+  margin-bottom: 3.34rem;
+}
+.documentsHeading {
+  font-size: 3rem;
+  font-weight: 700;
+  font-family: 'Poppins-Bold';
+  color: var(--text-color);
+  line-height: 1.1;
+  margin: 0;
+}
+.documentsButton {
+  height: 4.67rem;
+  width: 17.3rem;
+  background-color: var(--app-color);
+  border-radius: 0.67rem;
+  font-size: 1.33rem;
+  color: var(--white);
+  font-family: 'Poppins';
+}
+
+.documentsContainer {
+  display: flex;
+}
+.document {
+  width: 29.75rem;
+}
+.documentBox {
+  position: relative;
+  width: 100%;
+  height: 18.75vw;
+  border-radius: 1.4rem;
+  @apply flex justify-center items-center;
+  background-color: var(--common-app-text);
+  cursor: pointer;
+}
+
+.dotsContainer {
+  @apply flex justify-center items-center;
+  height: 1.6vw;
+  width: 1.6vw;
+  background-color: var(--white);
+  border-radius: 0.45vw;
+  font-size: 0.8vw;
+  position: absolute;
+  right: 0.85vw;
+  top: 0.85vw;
+}
+.documentsImgsContainer {
+  position: relative;
+}
+
+.documentImg {
+  height: 13.6vw;
+  width: 9.6vw;
+  border-radius: 5px;
+  z-index: 5;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.documentImgBack {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transform: translateX(10px) translateY(7px) rotate(5deg);
+}
+
+.addIconContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 6.5rem;
+  width: 6.5rem;
+  border-radius: 50%;
+  background-color: #b4bfff38;
+  z-index: 10;
+  @apply flex justify-center items-center;
+  cursor: pointer;
+}
+.plusIcon {
+  font-size: 2.5rem;
+  color: #b4bfff;
+  opacity: 1;
+}
+.documentHeading {
+  font-size: 1.35vw;
+  font-weight: 500;
+  font-family: 'Poppins-Medium';
+  line-height: 1;
+  @apply flex justify-center items-center;
+  margin-top: 2rem;
+  margin-top: 1.3vw;
+  text-align: center;
+}
+.greenDot {
+  height: 1.4rem;
+  width: 1.4rem;
+  height: 0.9vw;
+  width: 0.9vw;
+  background-color: #00b884;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.trackingsContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  margin-top: 5rem;
+  margin-bottom: 10rem;
+}
+@media (max-width: 992px) {
+  .trackingsContainer {
+    grid-template-columns: 1fr;
+  }
+}
+.trackingHeader {
+  @apply flex justify-between items-center;
+  padding-bottom: 1.67rem;
+  border-bottom: 2px solid var(--common-app-text);
+  margin-bottom: 2.5rem;
+}
+.trackingHeading {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-color);
+  font-family: 'Poppins-Bold';
+  line-height: 1;
+  margin: 0;
+}
+.viewAll {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #00b884;
+  line-height: 1;
+  cursor: pointer;
+  font-family: 'Poppins-Light';
+}
+.trackingMain {
+  border-radius: 8px;
+  background-color: #ebf9f5;
+  @apply px-24 py-5;
+}
+.trakingImg {
+  width: 100%;
+}
+.trackingPara {
+  font-size: 16px;
+  color: #676d7d;
+  line-height: 25px;
+  font-family: 'Poppins';
+  margin: 0;
+  text-align: center;
+  transform: translateY(-2rem);
+}
+.trakWrapper {
+  padding: 2rem;
+  border: 1px solid var(--common-app-text);
+  border-radius: 8px;
+  margin-bottom: 1.67rem;
+  cursor: pointer;
+}
+.trakHeading {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  font-family: 'Poppins-Medium';
+  line-height: 1.2;
+  margin: 0;
+}
+.trackEmail {
+  font-size: 1rem;
+  color: #676d7d;
+  font-family: 'Poppins';
+  line-height: 2;
+  margin-bottom: 1.67rem;
+}
+.emailOpen {
+  font-size: 1.2rem;
+  color: var(--app-color);
+  line-height: 1;
+  font-family: 'Poppins';
+  margin-right: 5px;
+}
+.emailNumber {
+  @apply flex items-center justify-center;
+  font-size: 0.9rem;
+  color: var(--white);
+  font-family: 'Poppins';
+  height: 1.67rem;
+  width: 1.67rem;
+  background-color: var(--app-color);
+  border-radius: 50%;
+  line-height: 1;
+}
+.trackDetail {
+  @apply flex items-center;
+  padding-right: 1.67rem;
+  border-right: 1px solid var(--common-app-text);
+  margin-right: 1.67rem;
+  margin-bottom: 3px;
+}
+.trackDetailFile {
+  color: #3e67f3;
+  font-size: 1.3rem;
+  margin-right: 0.67rem;
+}
+.trackDetailIcon {
+  font-size: 1.3rem;
+  margin-right: 0.67rem;
+}
+.trackDetailCalendar {
+  color: #fd71af;
+  font-size: 1.3rem;
+  margin-right: 0.67rem;
+}
+.trackDetailText {
+  font-size: 1.25rem;
+  color: var(--text-color);
+  font-family: 'Poppins';
+  white-space: nowrap;
+}
+.trackDetailImg {
+  height: 1.33rem;
+  width: 1.33rem;
+  margin-right: 0.75rem;
+}
+
+.documentDots {
+  position: absolute;
+  height: 4vw;
+  bottom: 1.9vw;
+  left: -1.3vw;
+}
+.borderNone {
+  border: none;
+  margin-right: 0;
+  padding-right: 0;
+}
+.margin0 {
+  margin: 0;
+}
+.allDocuments {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1.5vw;
+}
+.documentWrpper {
+  width: 100%;
+  max-width: 357px;
+  margin: 0 auto;
+}
+.jobApplicationBoxMain {
+  @apply flex justify-between items-center;
+}
+
+@media screen and (max-width: 767px) {
+  .mainContainer {
+    margin-top: 3rem;
+    margin-bottom: 3.2rem;
+  }
+  .extensionContainer {
+    flex-direction: column;
+    padding: 1rem 1rem;
+  }
+  .extensionPara {
+    font-size: 1.25rem;
+    text-align: center;
+  }
+  .extensionButton {
+    margin-top: 1rem;
+  }
+  .documetnsHeader {
+    margin-bottom: 1.67rem;
+  }
+  .documentsHeading {
+    font-size: 1.67rem;
+  }
+  .addIconContainer {
+    height: 2.75rem;
+    width: 2.75rem;
+  }
+  .plusIcon {
+    font-size: 0.9rem;
+  }
+  .documentsButton {
+    height: 3.75rem;
+    width: 100%;
+    font-size: 1.2rem;
+    margin-bottom: 1.67rem;
+  }
+  .documentsImgsContainer {
+    width: 80%;
+  }
+  .documentImg {
+    width: 100%;
+    height: auto;
+  }
+  .documentWrpper {
+    width: auto;
+  }
+  .documentBox {
+    height: auto;
+    padding: 2rem 3rem;
+    border-radius: 1rem;
+  }
+  .dotsContainer {
+    height: 1.25rem;
+    width: 1.25rem;
+    font-size: 0.75rem;
+    top: 0.75rem;
+    right: 0.75rem;
+    border-radius: 3px;
+  }
+  .documentHeading {
+    font-size: 0.9rem;
+    margin-top: 0.9rem;
+  }
+  .documentDots {
+    height: 2.5rem;
+    left: -1rem;
+  }
+  .greenDot {
+    height: 0.7rem;
+    width: 0.7rem;
+  }
+  .showMore {
+    height: 3.75rem;
+    width: 100%;
+    border: 1px solid var(--app-color);
+    font-size: 1.2rem;
+    font-family: 'Poppins';
+    color: var(--app-color);
+    border-radius: 0.7rem;
+    background-color: transparent;
+  }
+  .trackingMain {
+    padding: 2rem 2.25rem;
+  }
+  .trackingPara {
+    font-size: 1rem;
+    line-height: 1.3;
+  }
+  .trackingHeader {
+    padding-bottom: 0.9rem;
+    margin-bottom: 1.25rem;
+  }
+  .trackingHeading {
+    font-size: 1.67rem;
+  }
+  .viewAll {
+    font-size: 0.9rem;
+  }
+  .trakHeading {
+    font-size: 1.33rem;
+    margin-bottom: 0.5rem;
+  }
+  .trackEmail {
+    font-size: 1rem;
+  }
+  .trackDetailText,
+  .trackDetailFile {
+    font-size: 1rem;
+  }
+  .emailOpen {
+    display: none;
+  }
+  .jobApplicationBoxMain {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .trackingsContainer {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .jobApplicationBoxMain > div:first-child {
+    margin-bottom: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .documentBox {
+    height: auto;
+    padding: 1.67rem 2.5rem;
+  }
+}

@@ -1,0 +1,293 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,300,500,600');
+
+:root {
+  --app-color: #00b884;
+  --common-app-text: #ccf1e6;
+  --white: #ffffff;
+  --common-app-bg: #ebf9f5;
+  --text-color: #2b2e35;
+  --status-bad: #d12c2c;
+}
+
+html,
+body {
+  font-size: 12px;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  @apply text-primary-900 bg-primary-50;
+  @apply transition-colors duration-200 ease-in-out;
+  /* color: #676d7d; */
+}
+
+html,
+body p,
+span {
+  font-size: 12px;
+}
+
+@media (max-width: 1600px) {
+  body,html {
+      font-size: 65%;
+  }
+}
+
+@media (max-width: 1100px) {
+  body,html {
+      font-size: 55%;
+  }
+}
+
+@media (max-width: 768px) {
+  body,html {
+      font-size: 12px;
+  }
+}
+
+/* *::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background-color: white;
+}
+
+*::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px grey;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  border-radius: 20px;
+  outline: 1px solid slategrey;
+} */
+.MuiPopover-root {
+  max-height: 30vh;
+  @apply min-w-max;
+}
+
+.MuiPopover-paper {
+  max-height: 30vh;
+}
+
+a {
+  @apply font-semibold;
+}
+
+a:hover {
+  @apply underline;
+}
+
+hr {
+  @apply w-full h-1 border-primary-200;
+}
+
+ul {
+  @apply list-disc list-inside;
+}
+@layer base {
+  input,
+  textarea,
+  select {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1.33rem;
+    padding-right: 1.33rem;
+    font-size: 12px;
+  }
+}
+
+section {
+  /* @apply grid grid-cols-1 gap-8; */
+}
+
+.MuiTooltip-tooltip {
+  font-size: 10px;
+}
+
+.MuiMenuItem-root {
+  justify-content: center;
+}
+
+.spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.markdown {
+  @apply leading-relaxed;
+}
+
+.markdown ul {
+  list-style: disc;
+  list-style-position: outside;
+  padding-left: 1.5em;
+}
+
+.markdown table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  display: block;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+
+.markdown table th {
+  font-weight: bold;
+}
+
+.markdown table th,
+.markdown table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+
+.markdown table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.markdown table tr .odd {
+  background-color: #f8f8f8;
+}
+
+.markdown table tr .fail {
+  background-color: #f9f2f4;
+  color: #c7254e;
+  font-weight: bold;
+}
+
+.markdown table tr .pass {
+  background-color: #dff0d8;
+  color: #468847;
+  font-weight: bold;
+}
+
+.markdown table tr .warn {
+  background-color: #fcf8e3;
+  color: #ec971f;
+  font-weight: bold;
+}
+
+input[type='range']::-webkit-slider-thumb {
+  cursor: ew-resize;
+  box-shadow: -405px 0 0 400px #605e5c;
+
+  @apply w-4 h-4 bg-white rounded-full appearance-none;
+}
+
+@page {
+  margin: 0;
+}
+
+@media print {
+  html,
+  body {
+    background-color: white;
+  }
+
+  html,
+  body,
+  body * {
+    -webkit-print-color-adjust: exact;
+    color-adjust: exact;
+    visibility: hidden;
+  }
+
+  #page,
+  #page * {
+    visibility: visible;
+  }
+
+  #page {
+    width: 21cm;
+    min-height: 29.7cm;
+    position: absolute;
+    text-align: start;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: none;
+  }
+}
+
+.home-page-container {
+  background-color: var(--app-color);
+}
+
+.react-multi-carousel-dot-list {
+  right: 12% !important;
+  left: auto !important;
+}
+.react-multi-carousel-list {
+  padding-bottom: 4rem;
+}
+.react-multi-carousel-item {
+  padding: 1rem;
+}
+/* @media (max-width: 1024px) {
+  .react-multi-carousel-track > li {
+    width: 90vw;
+  }
+  .carousel-container {
+    width: 90vw;
+  }
+} */
+@media screen and (max-width: 767px) {
+  .react-multi-carousel-dot-list {
+    display: none !important;
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Poppins Fonts */
+
+@font-face {
+  font-family: 'Poppins-Light';
+  src: local('Poppins-Light'),
+    url(../fonts/Poppins-Light.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: local('Poppins'), url(../fonts/Poppins-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins-Medium';
+  src: local('Poppins-Medium'),
+    url(../fonts/Poppins-Medium.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins-SemiBold';
+  src: local('Poppins-SemiBold'),
+    url(../fonts/Poppins-SemiBold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins-Bold';
+  src: local('Poppins-Bold'), url(../fonts/Poppins-Bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins-ExtraBlack';
+  src: local('Poppins-ExtraBlack'),
+    url(../fonts/Poppins-Black.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins-SemiBold-Italic';
+  src: local('Poppins-SemiBold-Italic'),
+    url(../fonts/Poppins-SemiBoldItalic.ttf) format('truetype');
+}

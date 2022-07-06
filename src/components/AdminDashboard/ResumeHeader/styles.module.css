@@ -1,0 +1,94 @@
+/* Form Header  */
+.formHeader {
+  @apply flex justify-between items-center;
+}
+
+.titleInput {
+  line-height: 1;
+  height: fit-content;
+  width: fit-content;
+}
+
+.inputWrap {
+  position: relative;
+}
+.inputWrap .input {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  font-size: 1.67rem;
+  color: var(--text-color);
+  font-family: 'Poppins-Medium';
+}
+.widthMachine {
+  /*   Sort of a magic number to add extra space for number spinner */
+  padding: 0 1rem;
+  font-size: 1.67rem;
+  color: var(--text-color);
+  font-family: 'Poppins-Medium';
+}
+
+.input {
+  font-family: inherit;
+  font-size: inherit;
+  padding: 1px 6px;
+  outline: none;
+}
+.languageContainer {
+  @apply flex items-center;
+}
+.languageFlag {
+  height: 1.67rem;
+  border-radius: 2px;
+  border: 0.5px solid var(--common-app-text);
+  margin-right: 8px;
+}
+.templateCross {
+  display: none;
+  border-radius: 50%;
+  cursor: pointer;
+
+  height: 3rem;
+  width: 3rem;
+  color: var(--text-color);
+  font-size: 1.25rem;
+  background-color: #ebf9f5;
+  margin-left: 1rem;
+}
+.editIcon {
+  font-size: 1.33rem;
+  color: var(--app-color);
+  cursor: pointer;
+}
+.languageContainer {
+  cursor: pointer;
+  position: relative;
+}
+.languageName {
+  font-size: 1.2rem;
+  color: var(--text-color);
+  font-family: 'Poppins';
+  text-transform: capitalize;
+}
+
+@media (max-width: 992px) {
+  .languageContainer {
+    margin-right: 2rem;
+  }
+
+  .templateCross {
+    @apply flex justify-center items-center;
+  }
+}
+
+@media (max-width: 767px) {
+  .languageName {
+    display: none;
+  }
+  .languageContainer {
+    margin-right: 1rem;
+  }
+  .languageFlag {
+    margin-right: 0;
+  }
+}

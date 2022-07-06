@@ -1,0 +1,158 @@
+.qustionnairecontainer {
+  /* background-color: var(--common-app-bg); */
+  @apply flex flex-1 justify-center items-center overflow-hidden h-screen w-screen;
+}
+
+.card {
+  border-radius: 10px;
+  @apply p-10 flex flex-col justify-between h-screen md:h-4/6 w-full md:w-6/12;
+}
+
+.hello {
+  @apply flex items-center;
+}
+
+.username {
+  color: var(--app-color);
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.wave {
+  @apply ml-5;
+}
+
+.phonestep {
+  z-index: 123;
+}
+
+.verifycard {
+  background-color: var(--white);
+  box-shadow: var(--shadow);
+  border-radius: 10px;
+  @apply flex flex-1 flex-col justify-evenly items-center;
+}
+
+.verifyphone {
+  font-weight: bold;
+  font-size: 30px;
+  @apply mb-5;
+}
+
+.entercode {
+  font-size: 16px;
+}
+
+.phonenumber {
+  color: var(--app-color);
+  cursor: pointer;
+}
+
+.enterphone {
+  font-size: 30px;
+  font-weight: 600;
+  @apply mb-10 w-8/12;
+}
+
+.myinput {
+  border: 1px solid var(--app-color);
+  border-radius: 8px;
+  overflow: hidden;
+  @apply mt-8 w-6/12;
+}
+
+.resumestep {
+  /* @apply pt-10; */
+}
+
+.resumebtns {
+  @apply mt-10 md:w-8/12 flex flex-1 justify-between items-center self-center;
+}
+
+.resumebtn {
+  box-shadow: var(--shadow);
+  background-color: white;
+  border-radius: 8px;
+  @apply flex flex-1 flex-col items-start cursor-pointer p-5;
+}
+
+.resumebtntitle {
+  font-size: 14px;
+  @apply mt-5;
+}
+
+.resumebtntip {
+  font-size: 10px;
+}
+
+.jobtitleinput {
+  @apply mb-10 w-8/12;
+}
+
+.selectedjobtitles {
+  @apply flex items-center flex-wrap;
+}
+
+.selectedjobtitle {
+  background-color: #fff4e8;
+  color: #fca84e;
+  border-radius: 6px;
+  font-size: 10px;
+  padding: 5px 10px;
+  @apply flex items-center mr-5 mt-5;
+}
+
+.firstselectedjobtitle {
+  background-color: #ebf9f5;
+  color: var(--app-color);
+  border-radius: 6px;
+  font-size: 10px;
+  padding: 5px 10px;
+  @apply flex items-center mr-5 mt-5;
+}
+
+.recommendedbtn {
+  border-radius: 6px;
+  font-size: 10px;
+  padding: 5px 10px;
+  background-color: #ebf9f5;
+  color: black;
+  @apply flex items-center mr-5 mt-5 cursor-pointer;
+}
+
+.recommendedselected {
+  color: var(--app-color);
+}
+
+.actions {
+  @apply flex flex-row items-center mt-10;
+}
+
+.back {
+  background-color: var(--common-app-text);
+  border-color: var(--common-app-text);
+  font-weight: lighter;
+  color: black;
+  @apply mr-5;
+}
+
+.back:hover {
+  border-color: transparent;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.next {
+  background-color: var(--app-color);
+  border-color: var(--app-color);
+  font-weight: lighter;
+  @apply w-2/12;
+}
+
+.nexttext {
+  @apply flex flex-1 items-center self-center justify-center;
+}
+
+.next:hover {
+  border-color: transparent;
+  background-color: rgba(0, 0, 0, 0.2);
+}

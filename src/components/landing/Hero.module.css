@@ -1,0 +1,74 @@
+.logo {
+  align-self: flex-start;
+  @apply mb-20;
+}
+
+.logo:hover {
+  text-decoration: none !important;
+}
+
+.tailored {
+  /* color: var(--common-app-text); */
+  font-size: 14px;
+  @apply mb-10;
+}
+
+.prof {
+  /* color: var(--color-primary-50); */
+  /* font-size: 41px; */
+  font-weight: bold;
+  color: black;
+  @apply mb-10 text-5xl 2xl:text-4xl;
+  line-height: 4rem;
+}
+
+.savetime {
+  @apply md:mr-20 text-2xl 2xl:text-3xl;
+  line-height: 2.5rem;
+
+}
+
+.actions {
+  @apply flex my-10;
+}
+
+.buildaresume {
+  background-color: var(--app-color);
+  border: 0px solid var(--app-color);
+  box-shadow: 0 0 22px #2b2e3533;
+  border-radius: 8px;
+}
+
+.login {
+  flex-direction: row-reverse;
+  background-color: transparent;
+  color: var(--app-color);
+  border-width: 0;
+}
+.login:hover {
+  background-color: transparent;
+}
+.login:hover svg{margin-left: 10px;
+  }
+.login svg{transition: all .2s cubic-bezier(0.4, 0, 0.2, 1);}
+.privacy {
+  /* color: var(--common-app-text); */
+  /* font-size: 14px; */
+  @apply mb-10 text-sm xl:text-lg;
+}
+.bolder a{font-weight: 900;}
+.bolder a:hover{text-decoration: none;color:#000}
+.underline {
+  text-decoration-line: underline;
+  cursor: pointer;
+}
+#res_t
+{
+  max-width: 50vw;
+}
+#res_t object{margin-left: -10vw;}
+
+.madewithlove {
+  /* color: var(--color-primary-50); */
+  @apply flex items-center text-sm 2xl:text-lg;
+}

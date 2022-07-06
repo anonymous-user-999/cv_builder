@@ -1,0 +1,34 @@
+.leftsection {
+  @apply relative w-full flex flex-col flex-1;
+}
+
+.nav {
+  z-index: 100;
+  background-color: white;
+  @apply absolute top-0 left-0 px-8 right-4;
+}
+
+.container {
+  z-index: 10;
+  height: 100vh;
+  overflow-y: auto;
+  @apply flex self-stretch flex-col items-start px-20 w-full;
+  /* @apply grid gap-8; */
+}
+
+.container::-webkit-scrollbar {
+  background-color: transparent !important;
+  height: 0px !important;
+  width: 0px !important;
+}
+.container::-webkit-scrollbar-track {
+  background-color: transparent !important;
+  height: 0px !important;
+  width: 0px !important;
+}
+
+.next {
+  background-color: var(--app-color);
+  border-color: var(--app-color);
+  font-weight: lighter;
+}

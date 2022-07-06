@@ -1,0 +1,68 @@
+.languages {
+  position: absolute;
+  top: 7.16rem;
+  height: 17.25rem;
+  width: 17.5rem;
+  border-radius: 5px;
+}
+.languagesSubWrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: var(--white);
+  box-shadow: 0px 0px 22px #5757572e;
+  border-radius: 5px;
+  z-index: 10;
+}
+.languagesNames {
+  max-height: calc(100% - 5rem);
+  overflow: auto;
+}
+.languagesNames::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+.languagesNames::-webkit-scrollbar-track {
+  width: 7px;
+}
+
+/* Handle */
+.languagesNames::-webkit-scrollbar-thumb {
+  background: var(--common-app-text);
+}
+
+.languageNameContainer {
+  cursor: pointer;
+}
+.languageHeading {
+  font-size: 1.17rem;
+  font-family: 'Poppins-Medium';
+  font-weight: 500;
+  padding-top: 1.6rem;
+  margin-left: 1.6rem;
+  margin-bottom: 1.25rem;
+}
+.languageName {
+  font-size: 1.17rem;
+  font-family: 'Poppins';
+  color: var(--text-color);
+  text-transform: capitalize;
+}
+.languageFlag {
+  height: 1.6rem;
+  width: 2.5rem;
+  border-radius: 2px;
+  @apply mr-3 ml-7;
+}
+
+.languageNameContainer {
+  @apply flex items-center mb-3;
+}
+.language {
+  height: 1.5rem;
+  width: 2.125rem;
+  border-radius: 2px;
+  cursor: pointer;
+  @apply mr-10;
+}

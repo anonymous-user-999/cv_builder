@@ -1,0 +1,9 @@
+.container {
+  font-size: 10px;
+  @apply flex flex-row items-center w-full;
+}
+
+.value {
+  color: var(--app-color);
+  @apply ml-5 mr-1;
+}

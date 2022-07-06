@@ -1,0 +1,12 @@
+.container {
+  @apply cursor-pointer flex mt-3 items-center;
+}
+
+.icon {
+  background-color: var(--common-app-text);
+  @apply rounded p-2 mr-2;
+}
+
+.selected {
+  background-color: var(--app-color);
+}

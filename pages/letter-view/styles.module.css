@@ -1,0 +1,29 @@
+.main {
+  @apply flex justify-center;
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  background-color: #4c5c63;
+  padding: 5vh 0;
+  position: relative;
+}
+.templateContainer {
+  border-radius: 5px;
+  box-shadow: 0px 0px 44px #00b88421;
+  display: flex;
+  width: fit-content;
+  max-width: 95%;
+}
+.templateCross {
+  position: fixed;
+  top: 2rem;
+  right: 4.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  @apply flex justify-center items-center;
+  height: 3.75rem;
+  width: 3.75rem;
+  color: var(--text-color);
+  font-size: 2rem;
+  background-color: #ebf9f5;
+}

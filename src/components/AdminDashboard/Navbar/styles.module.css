@@ -1,0 +1,272 @@
+.overlay {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  background-color: #4c4c4c33;
+  z-index: 50;
+  min-height: -webkit-fill-available;
+}
+
+.nav {
+  position: relative;
+  height: 10rem;
+  padding: 0 5vw;
+  border-bottom: 1px solid var(--common-app-text);
+}
+.navLogo {
+  height: 4.25rem;
+  cursor: pointer;
+}
+.upgrade {
+  padding: 1rem 1.65rem;
+  font-size: 1.25rem;
+  font-family: 'Poppins';
+  color: var(--white);
+  border-radius: 5px;
+  background-color: #fca84e;
+  cursor: pointer;
+  @apply mr-10;
+}
+.upgrade:hover{background-color: #2a2e35;}
+.upgrade:hover svg{color:#fca84e;}
+.list {
+  list-style: none;
+  @apply flex mr-10;
+  border-right: 1px solid var(--common-app-text);
+}
+.listItem {
+  @apply mr-10 text-2xl;
+  color: var(--text-color);
+  font-family: 'Poppins';
+}
+.listItem:hover{
+  color: #00bb80 !important;
+}
+.listItem > a {
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.languageContainer {
+  position: relative;
+  z-index: 5;
+}
+.languageFlag {
+  height: 1.6rem;
+  width: 2.5rem;
+  border-radius: 2px;
+  @apply mr-3 ml-7;
+}
+
+.languageNameContainer {
+  @apply flex items-center mb-3;
+}
+.language {
+  height: 1.5rem;
+  width: 2.125rem;
+  border-radius: 2px;
+  cursor: pointer;
+  @apply mr-10;
+}
+.bellIcon {
+  @apply mr-10 text-3xl;
+  color: var(--app-color);
+  cursor: pointer;
+  padding: 10px;
+}
+.bellIcon:hover
+{
+  background: var(--app-color);
+  color: #fff;
+  border-radius: 100%;
+}
+.notificationsWrapper {
+  position: relative;
+}
+
+.settingsWrapper {
+  position: relative;
+}
+.settingsWrapper:hover {
+  background: #f5f5f5;
+  border-radius: 100px;
+}
+.settingsModal {
+  position: absolute;
+  top: 7.2rem;
+  left: 1rem;
+  height: 11.3rem;
+  width: 14.7rem;
+}
+.settingsContainer {
+  z-index: 100;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  padding: 1.67rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--white);
+  box-shadow: 0px 0px 9px #5858581f;
+  border-radius: 5px;
+}
+.settingsLink {
+  font-size: 1.33rem;
+  color: var(--text-color);
+  font-family: 'Poppins';
+  cursor: pointer;
+}
+.profileContainer {
+  height: 4.125rem;
+  width: 4.125rem;
+  border-radius: 100%;
+  background-color: var(--common-app-text);
+  @apply flex items-center justify-center mr-4;
+}
+.profile {
+  height: 3.5rem;
+  width: 3.5rem;
+  border-radius: 100%;
+}
+.username {
+  @apply mr-3 text-xl;
+  color: var(--text-color);
+  font-family: 'Poppins';
+}
+.angleDown {
+  height: 1.5rem;
+}
+.navMobileIconContainer {
+  @apply flex justify-center items-center;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 6px;
+  margin-left: 0.25rem;
+  background-color: #ebf9f5;
+  cursor: pointer;
+}
+.navMobileIcon {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.xMark,
+.mobileBellIcon {
+  font-size: 1.5rem;
+  color: var(--app-color);
+}
+
+.mobileLanguageFlag,
+.mobileBellContainer {
+  @apply flex justify-center items-center;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 6px;
+  margin-right: 1.4rem;
+  background-color: #ebf9f5;
+  cursor: pointer;
+}
+.mobileLanguage {
+  height: 1.2rem;
+  border-radius: 2px;
+}
+.upgradeMobileButton {
+  display: none;
+  height: 3.75rem;
+  width: 90vw;
+  margin: 0 auto;
+  margin-top: 1.67rem;
+  padding: 0 1.1rem;
+  border-radius: 8px;
+  color: var(--white);
+  background-color: #fca84e;
+  @apply justify-between items-center;
+}
+.upgradeMobileButtonText {
+  font-size: 1.2rem;
+}
+.upgradeMobileXMark {
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+@media (max-width: 1600px) {
+  .listItem {
+    @apply mr-5 text-2xl;
+  }
+  .upgrade {
+    @apply mr-5;
+  }
+  .language {
+    @apply mr-5;
+  }
+  .bellIcon {
+    @apply mr-5 text-3xl;
+  }
+  .list {
+    @apply mr-5;
+  }
+}
+
+@media (max-width: 1300px) {
+  .listItem {
+    @apply text-xl;
+  }
+  .upgrade {
+    padding: 0.7rem 1rem;
+    @apply mr-5 text-lg;
+  }
+  .profile {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 100%;
+  }
+  .profileContainer {
+    height: 3.125rem;
+    width: 3.125rem;
+    border-radius: 100%;
+  }
+  .username {
+    @apply text-xl;
+  }
+}
+
+@media (max-width: 767px) {
+  .list {
+    display: none;
+  }
+  .notificationsContainer::before {
+    height: 0;
+    width: 0;
+  }
+  .notificationsModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: unset;
+    left: 0;
+    height: calc(100% - 10rem);
+    width: 100%;
+    transform: translateY(10rem);
+    z-index: 1000;
+  }
+}
+
+@media (max-width: 556px) {
+  .navLogo {
+    height: 2.5rem;
+  }
+  .nav {
+    height: 7.5rem;
+    padding: 0 8.25rem;
+    border-bottom: 1px solid var(--common-app-text);
+    @apply px-8;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.29);
+    -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.29);
+    -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.29);
+  }
+  .upgradeMobileButton {
+    display: flex;
+  }
+}

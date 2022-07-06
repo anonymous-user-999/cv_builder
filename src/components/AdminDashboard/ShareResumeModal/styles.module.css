@@ -1,0 +1,141 @@
+.modalMain {
+  background-color: var(--white);
+  border: 1px solid #eff2ff;
+  border-radius: 5px;
+  width: 862px;
+  max-width: 90vw;
+  padding: 3.3rem 3rem;
+  max-height: 90vh;
+  overflow: auto;
+}
+.modalWrapper {
+  outline: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.header {
+  @apply flex items-center justify-between;
+  padding-bottom: 1.67rem;
+  margin-bottom: 2.3rem;
+  border-bottom: 1px solid var(--common-app-text);
+}
+.heading {
+  font-size: 1.67rem;
+  color: var(--text-color);
+  font-family: 'Poppins-Medium';
+}
+.cross {
+  @apply flex items-center justify-center;
+  height: 2.2rem;
+  width: 2.2rem;
+  border-radius: 8px;
+  background-color: #676d7d12;
+  font-size: 1rem;
+  color: #676d7d;
+  cursor: pointer;
+}
+.mainHeading {
+  font-size: 2rem;
+  color: var(--text-color);
+  font-family: 'Poppins-Bold';
+  margin-bottom: 1.67rem;
+  line-height: 1.2;
+}
+.para {
+  font-size: 1.5rem;
+  color: #676d7d;
+  font-family: 'Poppins';
+  margin-bottom: 2.3rem;
+  line-height: 1.3;
+}
+.urlHeading {
+  font-size: 1.33rem;
+  color: var(--text-color);
+  font-family: 'Poppins';
+  margin-bottom: 0.9rem;
+}
+.urlContainer {
+  @apply flex justify-between items-center;
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: #ebf9f5;
+  margin-bottom: 2.3rem;
+}
+.url {
+  font-size: 1.2rem;
+  color: var(--text-color);
+  font-family: 'Poppins';
+}
+.copyIcon {
+  padding: 0.9rem;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  color: var(--app-color);
+  background-color: #00b88417;
+  cursor: pointer;
+}
+.media {
+  @apply flex justify-center items-center;
+  height: 4.5rem;
+  width: 4.5rem;
+  border-radius: 50%;
+  border: 1px solid var(--common-app-text);
+  margin-right: 1.25rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.btn {
+  height: 4.5rem;
+  padding: 0 3.3rem;
+  background-color: var(--app-color);
+  color: var(--white);
+  font-family: 'Poppins';
+  font-size: 1.3rem;
+  border-radius: 5px;
+}
+
+.btnOutline {
+  height: 4.5rem;
+  width: 45%;
+  background-color: #ebf9f5;
+  color: var(--text-color);
+  font-family: 'Poppins';
+  font-size: 1.3rem;
+  border-radius: 5px;
+}
+
+.footer {
+  width: 90vw;
+  margin: 0 auto;
+  @apply flex justify-between items-center;
+  margin-top: 1.25rem;
+}
+.optionalText {
+  font-size: 0.9rem;
+  color: #676d7d;
+}
+
+@media (max-width: 768px) {
+  .btn {
+    width: 45%;
+  }
+  .mainHeading {
+    font-size: 1.3rem;
+    margin-bottom: 0.6rem;
+  }
+  .para {
+    font-size: 1.1rem;
+  }
+  .urlHeading {
+    font-size: 1.2rem;
+  }
+  .media {
+    @apply flex justify-center items-center;
+    height: 3.3rem;
+    width: 3.3rem;
+    margin-bottom: 1rem;
+  }
+}

@@ -1,0 +1,53 @@
+.mainContainer {
+  width: 80vw;
+  margin: 0 auto;
+  margin-top: 4rem;
+}
+
+@media (max-width: 1024px) {
+  .mainContainer {
+    width: 90vw;
+  }
+}
+
+.documetnsHeader {
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid var(--common-app-text);
+  margin-bottom: 3.34rem;
+}
+.documentsHeading {
+  font-size: 3rem;
+  font-weight: 700;
+  font-family: 'Poppins-Bold';
+  color: var(--text-color);
+  line-height: 1.1;
+  margin: 0;
+}
+
+.notification {
+  @apply py-7 px-14;
+  border: 1px solid var(--common-app-bg);
+  border-radius: 5px;
+  margin-bottom: 2.5rem;
+}
+.notificationHeading {
+  font-size: 1.83rem;
+  font-family: 'Poppins';
+  color: var(--app-color);
+  line-height: 1.1;
+  margin: 0;
+}
+.notificationTime {
+  font-size: 1.17rem;
+  font-family: 'Poppins';
+  color: var(--app-color);
+  line-height: 1;
+  margin: 0;
+}
+.notificationDetails {
+  font-size: 1.25rem;
+  font-family: 'Poppins';
+  color: #676d7d;
+  line-height: 2.2;
+  margin: 0;
+}

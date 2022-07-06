@@ -1,0 +1,25 @@
+@media screen {
+  .container {
+    /* size: 9.25in 7in; */
+    width: 100%;
+    height: 100%;
+    /* margin: 27mm 16mm 27mm 16mm; */
+    /* width: 21cm;
+    height: 29.7cm; */
+    overflow: auto;
+    box-shadow: var(--shadow);
+    position: relative;
+    @apply flex flex-col self-center bg-white rounded;
+  }
+}
+
+.template {
+  background-color: transparent;
+  border-width: 0;
+  @apply flex p-0 mb-10 self-start;
+}
+
+.template:focus {
+  background-color: transparent;
+  border-width: 0;
+}

@@ -1,0 +1,128 @@
+.main {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.formContainer {
+  max-height: 100vh;
+  overflow: auto;
+  padding: 2.5rem 6.25rem;
+}
+
+@media (max-width: 1440px) {
+  .formContainer {
+    padding: 2.5rem 3vw;
+  }
+}
+
+.templateContainer {
+  padding-top: 10vh;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  background-color: #4c5c63;
+}
+.templateCross {
+  position: fixed;
+  top: 2rem;
+  right: 4.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  @apply flex justify-center items-center;
+  height: 3.75rem;
+  width: 3.75rem;
+  color: var(--text-color);
+  font-size: 2rem;
+  background-color: #ebf9f5;
+}
+
+/* Carousel  */
+
+.carouselButtonGroup {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.crsImg {
+  width: 76%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 5px;
+  box-shadow: 0px 0px 44px #676d7d1a;
+}
+
+.carouselContainer {
+  position: relative;
+  max-width: 60vw;
+  margin: 0 auto;
+  margin-bottom: 2.5rem;
+}
+.carouselListContainer {
+  padding-bottom: 0;
+}
+.carouselListContainer ul {
+  margin-left: 4rem;
+}
+.itemContainer {
+  display: flex;
+  justify-content: center;
+  width: auto !important;
+  padding: 0 7.5px;
+}
+.carouselItem {
+  padding: 1.5rem 1.67rem;
+  background-color: var(--common-app-text);
+  font-size: 1.5rem;
+  color: var(--text-color);
+  font-family: 'Poppins';
+  border-radius: 8px;
+  text-align: center;
+  display: inline-block;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.carouselItemActive {
+  background-color: var(--app-color);
+  color: var(--white);
+}
+.carouselBtn {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 1.25rem;
+  font-size: 1.2rem;
+  background-color: var(--common-app-text);
+  color: var(--text-color);
+  top: 50%;
+  position: absolute;
+
+  transform: translateY(-50%);
+}
+.carouselBtnLeft {
+  left: 0;
+}
+.carouselBtnRigth {
+  right: 0;
+}
+
+.templateWrapper {
+  width: fit-content;
+  max-width: 95%;
+  height: 85vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+/* width */
+.templateWrapper::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+
+/* Handle */
+.templateWrapper::-webkit-scrollbar-thumb {
+  background: #fff;
+}

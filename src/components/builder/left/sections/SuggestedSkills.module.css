@@ -1,0 +1,31 @@
+.list {
+  @apply flex flex-row flex-wrap items-center;
+}
+
+.border {
+  border-bottom: 1px dashed var(--common-app-text);
+  @apply mb-5;
+}
+
+.skill {
+  background-color: #ebf9f5;
+  border-color: #ebf9f5;
+  color: black;
+  font-weight: lighter;
+  @apply items-center justify-center rounded mr-5 mb-5 p-3;
+}
+
+.skill:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.softskill {
+  background-color: rgba(252, 168, 78, 0.1);
+  border-color: rgba(252, 168, 78, 0.1);
+}
+
+.softskill:hover {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+  border-color: rgba(0, 0, 0, 0.1) !important;
+}

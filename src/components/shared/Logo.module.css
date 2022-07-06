@@ -1,0 +1,17 @@
+.container {
+  @apply flex items-center;
+}
+
+.logo {
+  box-shadow: var(--shadow);
+  @apply rounded;
+}
+
+.logo:hover {
+  box-shadow: var(--shadow-strong);
+}
+
+.text {
+  color: #2b2e35;
+  @apply flex flex-col ml-4;
+}

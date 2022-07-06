@@ -1,0 +1,140 @@
+.container {
+  z-index: 20;
+  @apply py-6   flex flex-col w-full;
+}
+
+.header {
+  @apply flex flex-col;
+}
+
+.between {
+  @apply flex-row justify-between;
+}
+
+.resumename {
+  font-weight: bold;
+  @apply mr-5;
+  font-size: 12px;
+}
+
+.editbtn {
+  color: var(--app-color);
+  border: 1px solid white;
+  background-color: white;
+  @apply p-0;
+}
+
+.editbtn:hover {
+  background-color: transparent;
+  border: 0px solid transparent !important;
+}
+
+.check {
+  color: #ff5c07;
+  @apply ml-5;
+}
+
+.language {
+  border: 1px solid white;
+  background-color: white;
+  color: black;
+}
+
+.flag {
+  width: 24px;
+  height: 14px;
+  object-fit: contain;
+  @apply rounded mr-3;
+}
+
+.language:hover {
+  background-color: transparent;
+  border: 0px solid transparent !important;
+}
+
+.progresscontainer {
+  @apply mb-5;
+}
+
+.completeness {
+  font-size: 12px;
+  color: black;
+}
+
+.progresstext {
+  color: #ff5c07;
+  @apply pr-1;
+}
+
+.info {
+  background-color: white;
+  border: 0px solid white;
+  color: var(--app-color);
+  @apply p-0 m-0;
+}
+
+.info:hover {
+  background-color: white !important;
+  border: 0px solid white !important;
+}
+
+.label {
+  display: none;
+}
+
+.row {
+  @apply flex flex-row;
+}
+
+.sections {
+  @apply flex flex-row flex-1 relative w-full overflow-y-hidden overflow-x-auto pb-0 pl-0;
+}
+
+.sections::-webkit-scrollbar {
+  background-color: transparent !important;
+  height: 0px !important;
+}
+.sections::-webkit-scrollbar-track {
+  background-color: transparent !important;
+  height: 0px !important;
+  width: 0px !important;
+}
+
+.leftchvron {
+  background-color: white;
+  @apply pr-2;
+}
+
+.chevron {
+  background-color: #ebf9f5;
+  color: black;
+  border-width: 0;
+  @apply flex-1 flex h-full;
+}
+
+.rightchvron {
+  background-color: white;
+  @apply pl-2;
+}
+
+.right {
+  background-color: #ebf9f5;
+  color: black;
+  border-width: 0;
+  @apply flex-1 flex h-full;
+}
+
+.section {
+  background-color: #ebf9f5;
+  border-color: #ebf9f5;
+  font-weight: normal;
+  color: black;
+  height: 40px;
+  @apply mr-5 flex min-w-max flex-row items-center flex-1;
+}
+
+.selected {
+  color: white;
+  background-color: var(--app-color);
+  border-color: var(--app-color);
+}

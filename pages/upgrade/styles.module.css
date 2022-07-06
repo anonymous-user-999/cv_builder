@@ -1,0 +1,396 @@
+.crossContainer {
+  @apply flex justify-center items-center;
+  height: 6.3rem;
+  width: 6.3rem;
+  cursor: pointer;
+}
+.main {
+  width: 976px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1000px) {
+  .main {
+    width: 90vw;
+  }
+}
+
+.crossIcon {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+.crownContainer {
+  height: 7rem;
+  width: 7rem;
+  @apply flex justify-center items-center;
+  background-color: #fcab5420;
+  margin: 0 auto;
+  border-radius: 50%;
+  margin-bottom: 2.5rem;
+}
+.crownIcon {
+  font-size: 3.8rem;
+  color: #fca84e;
+}
+
+.heading {
+  font-size: 4rem;
+  color: var(--text-color);
+  font-family: 'Poppins-Bold';
+  text-align: center;
+  line-height: 1.3;
+  margin-bottom: 5.8rem;
+}
+.carouselButtonGroup {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.crsImg {
+  width: 76%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 5px;
+  box-shadow: 0px 0px 44px #676d7d1a;
+}
+
+.carousel-container {
+  width: 100%;
+}
+.carousel-container > ul > li {
+  width: 100%;
+}
+.carouselDots {
+  height: 8px;
+  width: 1.25rem;
+  background-color: #00b884;
+  box-shadow: 0px 0px 22px #00b8841e;
+  opacity: 50%;
+  border-radius: 4px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+.carouselDotActive {
+  width: 3.5rem;
+  opacity: 1;
+}
+.carouselContainer {
+  position: relative;
+  margin-bottom: 5.8rem;
+}
+.carouselTitle {
+  position: absolute;
+  font-size: 2rem;
+  font-family: 'Poppins-Medium';
+  color: var(--text-color);
+  bottom: 0;
+  left: 12%;
+  transform: translateY(50%);
+}
+.carouselBtn {
+  height: 4rem;
+  width: 4rem;
+  background-color: var(--app-color);
+  border-radius: 1.25rem;
+  color: var(--white);
+  font-size: 1.2rem;
+}
+.carouselBtnDisabled {
+  background-color: var(--common-app-text) !important;
+  color: #00b884 !important;
+}
+
+.feature {
+  @apply flex items-center;
+  margin-bottom: 1.8rem;
+}
+.featureCheck {
+  font-size: 1.25rem;
+  color: #ff5c07;
+  margin-right: 0.9rem;
+}
+.featureText {
+  font-size: 1.5rem;
+  font-family: 'Poppins';
+  color: var(--text-color);
+}
+
+.premium {
+  @apply flex justify-between items-center;
+  margin-top: 1.5rem;
+  background: #fca84e;
+  border-radius: 7px;
+  padding: 3.3rem 2.5rem;
+  color: var(--white);
+  margin-bottom: 5.8rem;
+}
+.premiumHeading {
+  font-size: 2rem;
+  font-family: 'Poppins-Medium';
+  line-height: 1;
+  margin: 0;
+  margin-bottom: 0.7rem;
+}
+.premiumDetails {
+  font-size: 1.25rem;
+  font-family: 'Poppins';
+  margin: 0;
+  line-height: 1;
+}
+.premiumPriceCut {
+  font-size: 3.2rem;
+  font-family: 'Poppins';
+  text-decoration: line-through;
+  opacity: 0.6;
+  margin-right: 1.25rem;
+}
+.premiumPrice {
+  font-size: 5rem;
+  font-family: 'Poppins-bold';
+}
+.premiumPriceDuration {
+  font-size: 1.7rem;
+  font-family: 'Poppins-Medium';
+}
+
+.card {
+  width: 100%;
+  border-radius: 10px;
+  padding: 5rem;
+  box-shadow: 0px 0px 44px #676d7d1a;
+  margin-bottom: 6rem;
+}
+.cardHeading {
+  font-size: 2rem;
+  font-family: 'Poppins-Bold';
+  color: var(--text-color);
+  line-height: 1.3;
+  margin: 0;
+  margin-bottom: 3.25rem;
+}
+.cardButton {
+  @apply flex justify-center items-center;
+  padding: 2rem 0;
+  width: 48%;
+  border-radius: 1rem;
+  border: 1px solid #fca84e;
+}
+.cardButton {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  font-family: 'Poppins-Medium';
+  cursor: pointer;
+}
+.cardButtonIcon {
+  font-size: 1.75rem;
+  color: #676d7d;
+  margin-right: 1rem;
+}
+.cardButtonActive {
+  border: 0;
+  box-shadow: 0px 4px 12px #676d7d1f;
+}
+.cardButtonActive .cardButtonIcon {
+  color: #fca84e;
+}
+.cardSubHeading {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  font-family: 'Poppins-Medium';
+  margin-top: 3.3rem;
+  margin-bottom: 3.75rem;
+  line-height: 1.1;
+}
+.inputContainer {
+  position: relative;
+  margin-bottom: 2.5rem;
+}
+.label {
+  font-size: 1.25rem;
+  color: var(--text-color);
+  font-family: 'Poppins';
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+.halfInput {
+  width: 48%;
+}
+.input {
+  height: 5rem;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid var(--text-color);
+  padding-left: 1.7rem;
+  font-size: 1.5rem;
+  font-family: 'Poppins';
+  color: var(--text-color);
+}
+.inputLock {
+  position: absolute;
+  right: 1.7rem;
+  font-size: 1.5rem;
+  bottom: 2rem;
+  color: #676d7d;
+}
+.cardPayButton {
+  height: 5rem;
+  width: 48%;
+  background-color: #fca84e;
+  border-radius: 10rem;
+  font-size: 2.1rem;
+  color: var(--white);
+  font-family: 'Poppins-Medium';
+  margin-top: auto;
+  margin-bottom: 2.5rem;
+}
+.cardPayButtonDollar {
+  font-size: 1rem;
+  line-height: 1;
+  margin-top: 0.75rem;
+  margin-left: 0.75rem;
+}
+
+.cardsHeading {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  font-family: 'Poppins-Medium';
+  margin-right: 2.9rem;
+}
+.cardLogo {
+  margin-right: 2rem;
+  height: 5rem;
+}
+.cardsPara {
+  width: 90%;
+  margin: 0 auto;
+  font-size: 1.25rem;
+  color: #676d7d;
+  font-family: 'Poppins';
+  text-align: center;
+  margin-bottom: 6.5rem;
+}
+.featuresWrapper {
+  @apply flex justify-between;
+}
+.cardBottom {
+  @apply flex justify-between;
+}
+
+@media (max-width: 767px) {
+  .heading {
+    font-size: 2.3rem;
+    margin-bottom:3rem;
+  }
+  .carouselButtonGroup {
+    justify-content: flex-end;
+    bottom: -1.5rem;
+    top: unset;
+  }
+  .crsImg {
+    width: 100%;
+  }
+  .carouselTitle {
+    left: 0;
+    font-size: 1.67rem;
+    transform: translateY(-0.5rem);
+  }
+  .carouselBtn {
+    height: 3.33rem;
+    width: 3.33rem;
+    font-size: 1.2rem;
+  }
+  .carouselBtn:not(:last-child) {
+    margin-right: 1rem;
+  }
+  .featuresWrapper {
+    flex-direction: column;
+  }
+  .featureText {
+    font-size: 1.25rem;
+  }
+  .feature {
+    margin-bottom: 1.25rem;
+  }
+  .premium {
+    flex-direction: column;
+    padding: 2.6rem 1.75rem;
+    margin-bottom: 3.75rem;
+  }
+  .premiumHeading {
+    font-size: 1.67rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .premiumDetails {
+    font-size: 1.2rem;
+    margin-bottom: 1.67rem;
+    text-align: center;
+  }
+  .premiumPriceCut {
+    font-size: 1.5rem;
+  }
+  .premiumPrice {
+    font-size: 3rem;
+    line-height: .5;
+  }
+  .premiumPriceDuration {
+    font-size: 0.9rem;
+  }
+  .card {
+    padding: 0;
+    box-shadow: none;
+    margin-bottom: 3rem;
+  }
+  .carouselContainer
+  {
+    margin-bottom: 3rem;
+  }
+  .cardHeading {
+    font-size: 2rem;
+    margin-bottom: 1.67rem;
+  }
+  .cardButton {
+    padding: 1rem 0;
+    font-size: 1.25rem;
+  }
+  .cardButtonIcon {
+    font-size: 1.25rem;
+  }
+  .cardSubHeading {
+    font-size: 1.5rem;
+    margin-top: 1.67rem;
+    margin-bottom: 1.25rem;
+  }
+  .label {
+    font-size: 1.2rem;
+  }
+  .input {
+    height: 3.75rem;
+    font-size: 1rem;
+  }
+  .inputLock {
+    font-size: 1.1rem;
+  }
+  .cardBottom {
+    flex-direction: column;
+  }
+  .cardPayButton {
+    height: 3.75rem;
+    width: 100%;
+    font-size: 1.25rem;
+  }
+  .cardLogo {
+    margin-right: 1rem;
+    height: 5rem;
+  }
+  .cardsHeading {
+    font-size: 1.25rem;
+  }
+  .cardsPara {
+    font-size: 1.25rem;
+  }
+}

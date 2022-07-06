@@ -1,0 +1,23 @@
+.container {
+  @apply mb-5 flex justify-end;
+}
+
+.cancel {
+  background-color: #ebf9f5;
+  border-color: #ebf9f5;
+  color: black;
+  height: 40px;
+  @apply mr-5 px-10;
+}
+
+.add {
+  background-color: var(--app-color);
+  border-color: var(--app-color);
+  height: 40px;
+  @apply w-full px-10;
+}
+
+.end {
+  height: 40px;
+  @apply w-auto px-10;
+}

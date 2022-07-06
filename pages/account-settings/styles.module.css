@@ -1,0 +1,429 @@
+.main {
+  width: 80vw;
+  margin: 4rem auto;
+}
+
+.heading {
+  font-size: 3rem;
+  font-family: 'Poppins-Bold';
+  line-height: 1.2;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid var(--common-app-text);
+  margin-bottom: 3.34rem;
+}
+.planContainer {
+  padding: 4.15rem;
+  border-radius: 8px;
+  border: 1px solid var(--common-app-text);
+  margin-bottom: 4.1rem;
+}
+.planSubContainer {
+  @apply flex justify-between items-center px-14 py-6;
+}
+.planHeading {
+  font-size: 2rem;
+  font-family: 'Poppins-Medium';
+  margin-bottom: 2.5rem;
+  line-height: 1;
+}
+.planSubHeading {
+  font-size: 1.5rem;
+  font-family: 'Poppins';
+  color: var(--text-color);
+  line-height: 1.3;
+  margin: 0;
+}
+.planPara {
+  font-size: 1.25rem;
+  color: #676d7d;
+  font-family: 'Poppins';
+  margin: 0;
+  line-height: 2;
+}
+.planBtn {
+  height: 4.66rem;
+  width: 15.3rem;
+  background-color: #fca84e;
+  border-radius: 8px;
+  color: var(--white);
+  font-family: 'Poppins';
+  font-size: 1.3rem;
+}
+
+.formContainer {
+  padding: 2.5rem;
+  border-radius: 8px;
+  border: 1px solid var(--common-app-text);
+  margin-bottom: 2rem;
+}
+.formHeading {
+  font-size: 2rem;
+  color: var(--text-color);
+  font-family: 'Poppins-Medium';
+  line-height: 1.2;
+}
+.formAngleUP {
+  font-size: 1.3rem;
+  color: var(--text-color);
+  transform: rotate(180deg);
+  cursor: pointer;
+}
+.formAngleUPOpen {
+  font-size: 1.3rem;
+  color: var(--text-color);
+  cursor: pointer;
+  transform: rotate(0deg);
+}
+.inputsContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.8rem;
+  @apply mt-10;
+}
+.label {
+  font-size: 1.33rem;
+  color: var(--text-color);
+  font-family: 'Poppins';
+  line-height: 1.2;
+  margin-bottom: 0.8rem;
+}
+.input {
+  height: 5rem;
+  width: 100%;
+  outline: none;
+  border: 1px solid var(--app-color);
+  font-size: 1.2rem;
+  color: var(--text-color);
+  font-family: 'Poppins';
+  padding: 0 1.67rem;
+  border-radius: 5px;
+}
+.formBtn {
+  height: 4.67rem;
+  border-radius: 8px;
+  background-color: #ebf9f5;
+  padding: 0 2.8rem;
+  font-size: 1.33rem;
+  color: var(--app-color);
+  font-family: 'Poppins';
+  margin-top: 2.5rem;
+}
+
+.jobSubHeading {
+  font-size: 1.33rem;
+  color: var(--text-color);
+  font-family: 'Poppins';
+  margin-bottom: 0.9rem;
+}
+.jobSubHeadingSpan {
+  font-size: 0.9rem;
+}
+.jobTypeContainer {
+  padding: 1.1rem 1.5rem;
+  background-color: #ebf9f5;
+  border-radius: 5px;
+  @apply flex items-center mr-5;
+  cursor: pointer;
+  font-size: 1.25rem;
+}
+.jobTypeCheck {
+  height: 2rem;
+  width: 2rem;
+  background-color: var(--common-app-text);
+  color: var(--app-color);
+  font-size: 0.9rem;
+  border-radius: 50%;
+  @apply flex justify-center items-center mr-4;
+}
+.jobTypeCheckTicked {
+  background-color: var(--app-color);
+  color: var(--white);
+}
+.jobCircleCheck {
+  height: 2rem;
+  width: 2rem;
+  border: 1px solid var(--common-app-text);
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+.jobCircleCheckTicked {
+  border: 7px solid var(--app-color);
+}
+.availabilityDays {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.availabilityDay {
+  margin-bottom: 1rem;
+}
+.salariesRangeContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.notification {
+  @apply flex justify-between items-center;
+  padding: 1.8rem 3.7rem;
+  border: 1px solid #ebf9f5;
+  border-radius: 5px;
+  margin-bottom: 1.7rem;
+}
+.notificationHeading {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  font-family: 'Poppins';
+  line-height: 1.2;
+  margin-bottom: 0;
+}
+.notificationDetails {
+  font-size: 1.25rem;
+  color: #676d7d;
+  font-family: 'Poppins';
+  line-height: 2;
+  margin-top: 0;
+}
+
+.socilaAccount {
+  @apply flex justify-between items-center;
+  padding: 2.5rem 3.75rem;
+  border: 1px solid #ebf9f5;
+  border-radius: 5px;
+  margin-bottom: 1.67rem;
+}
+.socialAccountIcon {
+  font-size: 2rem;
+  margin-right: 2rem;
+}
+.socialAccountName {
+  font-size: 1.25rem;
+  color: var(--text-color);
+  font-family: 'Poppins';
+  line-height: 1.1;
+}
+.socilaAccountStatus {
+  font-size: 1.5rem;
+  color: var(--app-color);
+  font-family: 'Poppins-Medium';
+  line-height: 1.1;
+  cursor: pointer;
+}
+.socilaAccountImg {
+  width: 2rem;
+  margin-right: 2rem;
+}
+.danger {
+  @apply flex justify-between items-center;
+  padding: 1.6rem 1.7rem;
+  border-radius: 5px;
+}
+.dangerText {
+  font-size: 1.25rem;
+  color: var(--text-color);
+  font-family: 'Poppins';
+  line-height: 1.2;
+}
+.dangerBtn {
+  height: 4.67rem;
+  width: 17.25rem;
+  border-radius: 0.67rem;
+  background-color: #ffeeee;
+  font-size: 1.3rem;
+  font-family: 'Poppins';
+  color: #ff0707;
+}
+.bottomText {
+  font-size: 1.25rem;
+  color: var(--text-color);
+  font-family: 'Poppins';
+  line-height: 2;
+}
+.bottomLink {
+  color: #2699fb;
+  cursor: pointer;
+}
+.socialAccountNameContainer {
+  @apply flex items-center;
+  width: calc(100% - 10rem);
+}
+@media (max-width: 1380px) {
+  .main {
+    width: 90vw;
+  }
+}
+
+@media (max-width: 767px) {
+  .main {
+    margin-bottom: 3.75rem;
+  }
+  .heading {
+    margin-top: 3.3rem;
+    font-size: 1.67rem;
+    margin-bottom: 1.67rem;
+  }
+  .planContainer {
+    padding: 2.1rem 1.1rem;
+    margin-bottom: 1.67rem;
+  }
+  .planHeading {
+    font-size: 1.67rem;
+    margin-bottom: 1.2rem;
+  }
+  .planSubContainer {
+    padding: 0;
+    flex-direction: column;
+  }
+  .planSubHeading {
+    font-size: 1.2rem;
+    margin-bottom: 1.2rem;
+  }
+  .planPara {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  .planBtn {
+    height: 3.75rem;
+    width: 100%;
+    font-size: 1.2rem;
+  }
+  .formContainer {
+    padding: 2.1rem 1.1rem;
+    margin-bottom: 1.67rem;
+  }
+  .formHeading {
+    font-size: 1.33rem;
+  }
+  .inputsContainer {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+    margin-top: 1.2rem;
+  }
+  .label {
+    font-size: 1.2rem;
+  }
+  .input {
+    height: 3.75rem;
+    font-size: 1rem;
+    padding-left: 1.1rem;
+  }
+  .formBtn {
+    height: 3.75rem;
+    width: 100%;
+    margin-top: 2.1rem;
+  }
+  .jobSubHeading {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  .jobTypeContainer {
+    margin-bottom: 1rem;
+    padding: 0.9rem;
+  }
+  .jobTypeCheck {
+    height: 1.67rem;
+    width: 1.67rem;
+    font-size: 0.75rem;
+  }
+  .salariesRangeContainer {
+    @apply mb-7;
+  }
+  .notification {
+    padding: 0;
+    border: none;
+  }
+  .notification:not(:last-child) {
+    border-bottom: 1px solid #ebf9f5;
+  }
+  .notificationHeading {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  .notificationDetails {
+    font-size: 1rem;
+    margin-bottom: 0.7rem;
+  }
+  .socilaAccount {
+    padding: 0;
+    padding-bottom: 1.33rem;
+    border: none;
+  }
+
+  .socilaAccount:not(:last-child) {
+    border-bottom: 1px solid #ebf9f5;
+  }
+  .socilaAccount:last-child {
+    padding: 0;
+    margin: 0;
+  }
+  .socialAccountIcon {
+    font-size: 1.5rem;
+    margin-right: 0.75rem;
+  }
+  .socialAccountNameContainer {
+    @apply flex items-center;
+    width: calc(100% - 5rem);
+  }
+  .socialAccountName {
+    font-size: 1.2rem;
+    max-width: 70%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .availabilityDays {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    @apply mb-7;
+  }
+  .availabilityDay {
+    padding: 0.9rem 0.7rem;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+  .dayAvailable {
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-right: 0.6rem;
+    margin-bottom: 0;
+  }
+  .socilaAccountStatus {
+    font-size: 1rem;
+  }
+  .socilaAccountImg {
+    height: 1.5rem;
+    width: 1.5rem;
+
+    margin-right: 0.75rem;
+  }
+  .danger {
+    flex-direction: column;
+    padding: 0;
+    border: none;
+  }
+  .dangerText {
+    font-size: 1.2rem;
+    margin-bottom: 2.1rem;
+  }
+  .dangerBtn {
+    width: 100%;
+    height: 3.75rem;
+    font-size: 1.2rem;
+  }
+  .bottomText {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .salariesRangeContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-bottom: 0;
+  }
+  .salaryRange {
+    margin: 0;
+  }
+}

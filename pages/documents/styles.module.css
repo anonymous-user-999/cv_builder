@@ -1,0 +1,258 @@
+.mainContainer {
+  width: 80vw;
+  margin: 0 auto;
+  margin-top: 4rem;
+}
+
+.allDocuments {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1.5vw;
+}
+
+.documetnsHeader {
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid var(--common-app-text);
+  margin-bottom: 3.34rem;
+}
+.documentsHeading {
+  font-size: 3rem;
+  font-weight: 700;
+  font-family: 'Poppins-Bold';
+  color: var(--text-color);
+  line-height: 1.1;
+  margin: 0;
+}
+.documentsButton {
+  height: 4.67rem;
+  width: 17.3rem;
+  background-color: var(--app-color);
+  border-radius: 0.67rem;
+  font-size: 1.33rem;
+  color: var(--white);
+  font-family: 'Poppins';
+}
+
+.documentsContainer {
+  display: flex;
+}
+.document {
+  width: 29.75rem;
+}
+/* .documentWrpper {
+  margin: 0.75vw;
+}
+.documentWrpper:first-child {
+  margin-left: 0;
+}
+.documentWrpper:last-child {
+  margin-right: 0;
+} */
+.documentBox {
+  position: relative;
+  width: 18.5vw;
+  height: 18.75vw;
+  border-radius: 1.4rem;
+  @apply flex justify-center items-center;
+  background-color: var(--common-app-text);
+  cursor: pointer;
+}
+
+.dotsContainer {
+  @apply flex justify-center items-center;
+  height: 1.6vw;
+  width: 1.6vw;
+  background-color: var(--white);
+  border-radius: 0.45vw;
+  font-size: 0.8vw;
+  position: absolute;
+  right: 0.85vw;
+  top: 0.85vw;
+}
+.documentsImgsContainer {
+  position: relative;
+}
+
+.documentImg {
+  height: 13.6vw;
+  width: 9.6vw;
+  border-radius: 5px;
+  z-index: 5;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.documentImgBack {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transform: translateX(10px) translateY(7px) rotate(5deg);
+}
+
+.addIconContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 6.5rem;
+  width: 6.5rem;
+  border-radius: 50%;
+  background-color: #b4bfff38;
+  z-index: 10;
+  @apply flex justify-center items-center;
+  cursor: pointer;
+}
+.plusIcon {
+  font-size: 2.5rem;
+  color: #b4bfff;
+  opacity: 1;
+}
+.documentHeading {
+  font-size: 1.35vw;
+  font-weight: 500;
+  font-family: 'Poppins-Medium';
+  line-height: 1;
+  @apply flex justify-center items-center;
+  margin-top: 2rem;
+  margin-top: 1.3vw;
+  text-align: center;
+}
+.greenDot {
+  height: 1.4rem;
+  width: 1.4rem;
+  background-color: #00b884;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+.inputContainer {
+  height: 4.67rem;
+  width: auto;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  position: relative;
+  margin-bottom: 1.67rem;
+  margin-right: 1.25rem;
+}
+.searchIcon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 1.33rem;
+  font-size: 1.5rem;
+  color: #676d7d;
+}
+.searchInput {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  background-color: transparent;
+  padding-left: 3.5rem;
+  font-size: 1.33rem;
+  color: #676d7d;
+  border: none;
+  outline: none;
+}
+.documentDots {
+  position: absolute;
+  height: 4vw;
+  bottom: 1.9vw;
+  left: -1.3vw;
+}
+
+@media (max-width: 1350px) {
+  .borderNone {
+    border: none;
+    margin-right: 0;
+    padding-right: 0;
+  }
+  .margin0 {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .mainContainer {
+    width: 90vw;
+    margin-top: 3rem;
+    margin-bottom: 3.2rem;
+  }
+  .allDocuments {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .documentBox {
+    width: 100%;
+  }
+  .inputContainer {
+    height: 3.75rem;
+    width: 100%;
+  }
+  .searchIcon {
+    font-size: 1.2rem;
+  }
+  .searchInput {
+    font-size: 1rem;
+  }
+  .documetnsHeader {
+    margin-bottom: 1.67rem;
+  }
+  .documentsHeading {
+    font-size: 1.67rem;
+  }
+  .addIconContainer {
+    height: 2.75rem;
+    width: 2.75rem;
+  }
+  .plusIcon {
+    font-size: 0.9rem;
+  }
+  .documentsButton {
+    height: 3.75rem;
+    width: 100%;
+    font-size: 1.2rem;
+    margin-bottom: 1.67rem;
+  }
+  .documentsImgsContainer {
+    width: 80%;
+  }
+  .documentImg {
+    width: 100%;
+    height: auto;
+  }
+
+  .documentBox {
+    height: auto;
+    padding: 2rem 3rem;
+  }
+  .dotsContainer {
+    height: 1.25rem;
+    width: 1.25rem;
+    font-size: 0.75rem;
+    top: 0.75rem;
+    right: 0.75rem;
+    border-radius: 3px;
+  }
+  .documentHeading {
+    font-size: 0.9rem;
+    margin-top: 0.9rem;
+  }
+  .documentDots {
+    height: 2.5rem;
+    left: -1rem;
+  }
+  .greenDot {
+    height: 0.7rem;
+    width: 0.7rem;
+  }
+
+  .viewAll {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .allDocuments {
+    grid-template-columns: 1fr 1fr;
+    gap: 3vw;
+  }
+}

@@ -1,0 +1,8 @@
+.container {
+  background-color: var(--white);
+  width: 90vw;
+  height: 100vh;
+  @apply flex flex-1 sm:text-left ;
+  margin: 0 auto;
+}
+

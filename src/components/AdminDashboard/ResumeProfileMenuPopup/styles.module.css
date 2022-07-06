@@ -1,0 +1,38 @@
+.modalContainer {
+  position: absolute;
+  bottom: 4rem;
+  width: 90vw;
+  left: 50%;
+  transform: translateX(-50%);
+  outline: none;
+}
+.modalMain {
+  width: 100%;
+  background-color: var(--white);
+  border-radius: 5px;
+  padding: 0.6rem 1rem;
+  margin-bottom: 1.25rem;
+}
+.modalItem {
+  @apply flex items-center;
+  height: 3rem;
+  padding-left: 0.7rem;
+}
+.modalItemIcon {
+  font-size: 1.2rem;
+  margin-right: 0.5rem;
+}
+.modalItemText {
+  font-size: 1.2rem;
+  color: var(--text-color);
+  font-family: 'Poppins';
+}
+.btn {
+  width: 100%;
+  height: 3.75rem;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-family: 'Poppins';
+  color: #676d7d;
+  background-color: var(--white);
+}

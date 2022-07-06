@@ -1,0 +1,57 @@
+.loginmodal {
+  background-color: var(--common-app-bg);
+  position: relative;
+  @apply flex flex-1 w-screen h-full items-center justify-center;
+}
+
+.title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  @apply mb-10;
+}
+
+.prefill {
+  text-align: center;
+  font-size: 16px;
+  @apply mb-10;
+}
+
+.actions {
+  background-color: var(--color-primary-50);
+  box-shadow: var(--shadow);
+  border-radius: 10px;
+  @apply pb-0 p-5 w-full sm:mx-5 md:w-6/12;
+}
+
+.loginbtn {
+  background: var(--color-primary-50);
+  border-width: 0;
+  color: var(--color-primary-900);
+  font-weight: lighter;
+  position: relative;
+  @apply mb-5 w-full;
+}
+
+.loginbtn:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.termsnconditions {
+  text-align: center;
+  @apply mt-8 px-10 w-full md:w-6/12;
+}
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 100;
+  cursor: pointer;
+}
+.singInEmail {
+  font-size: 1.33rem;
+  cursor: pointer;
+  color: var(--text-color);
+  font-family: 'Poppins';
+  @apply mt-16;
+}

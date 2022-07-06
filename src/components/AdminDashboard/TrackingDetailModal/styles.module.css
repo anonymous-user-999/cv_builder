@@ -1,0 +1,322 @@
+.modalMain {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--white);
+  max-height: 90vh;
+  width: 85vw;
+  box-shadow: 0px 16px 44px #57575728;
+  border-radius: 5px;
+  overflow: auto;
+  padding: 5rem 5.9rem;
+  outline: none;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: #4c4c4c33;
+  z-index: 100;
+  min-height: -webkit-fill-available;
+}
+
+.sliderBtn {
+  height: 4rem;
+  width: 4rem;
+  background-color: var(--app-color);
+  border-radius: 50%;
+  color: var(--white);
+  line-height: 1;
+  font-size: 1.2rem;
+  position: absolute;
+  top: 50%;
+}
+
+.leftBtn {
+  left: 3vw;
+}
+.rightBtn {
+  right: 3vw;
+}
+
+.header {
+  @apply flex justify-between items-start;
+  margin-bottom: 1.67rem;
+}
+.heading {
+  font-size: 2.5rem;
+  font-family: 'Poppins-Bold';
+  color: var(--app-color);
+  margin-right: 1.67rem;
+  text-transform: capitalize;
+}
+.star {
+  font-size: 2rem;
+  color: #fca84e;
+}
+.cross {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  cursor: pointer;
+}
+.email {
+  font-size: 1.5rem;
+  color: #676d7d;
+  font-family: 'Poppins';
+  margin-bottom: 3rem;
+}
+.main {
+  display: grid;
+  grid-template-columns: 1.8fr 1fr;
+}
+.contentContainer {
+  border-right: 1px solid var(--common-app-text);
+}
+.subHeading {
+  font-size: 1.33rem;
+  color: var(--text-color);
+  font-family: 'Poppins-Medium';
+}
+.plainText {
+  font-size: 1.2rem;
+  color: #676d7d;
+  font-family: 'Poppins';
+  line-height: 2rem;
+}
+.detailsContainer {
+  padding-left: 4rem;
+}
+.detailMainHeading {
+  font-size: 1.67rem;
+  color: var(--text-color);
+  font-family: 'Poppins-Medium';
+  margin-bottom: 1.67rem;
+}
+.detail {
+  @apply flex justify-between items-center;
+  padding: 1.25rem;
+  border: 1px solid #eff2ff;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+}
+.detailIconContainer {
+  @apply flex justify-center items-center;
+  height: 2.2rem;
+  width: 2.2rem;
+  border-radius: 8px;
+  background-color: #3e67f3;
+  color: var(--white);
+  font-size: 1rem;
+  margin-right: 0.9rem;
+}
+.detailHeading {
+  font-size: 1.2rem;
+  color: var(--text-color);
+  font-family: 'Poppins-Medium';
+}
+.detailView {
+  @apply flex items-center;
+  color: var(--app-color);
+  font-size: 1rem;
+  cursor: pointer;
+}
+.dashedCircle {
+  height: 1rem;
+  width: 1rem;
+  border: 1px dashed var(--white);
+  border-radius: 50%;
+}
+.footer {
+  @apply flex justify-between items-center mt-12;
+}
+.btn {
+  height: 4.5rem;
+  width: 9.5rem;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-family: 'Poppins';
+  font-size: 1.33rem;
+}
+.statusPopupContainer {
+  position: absolute;
+  bottom: 0;
+  right: 1.25rem;
+  transform: translateY(100%);
+}
+.statusPopup {
+  padding: 1.25rem;
+  border-radius: 5px;
+  width: 155px;
+  background-color: var(--white);
+  box-shadow: 0px 0px 9px #5858581f;
+}
+.statusPopupHeading {
+  font-size: 1rem;
+  color: #676d7d;
+  font-family: 'Poppins';
+  margin-bottom: 1rem;
+}
+.statusValue {
+  font-size: 1rem;
+  color: var(--text-color);
+  cursor: pointer;
+  font-family: 'Poppins';
+  line-height: 1;
+}
+.statusPopupBtn {
+  display: none;
+}
+.statusValue:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.footerBtns {
+  display: flex;
+}
+
+@media (max-width: 1024px) {
+  .main {
+    grid-template-columns: 1fr;
+  }
+  .contentContainer {
+    border: none;
+  }
+  .detailsContainer {
+    padding-left: 0;
+    margin-top: 2rem;
+  }
+  .leftBtn {
+    left: 1vw;
+  }
+  .rightBtn {
+    right: 1vw;
+  }
+}
+@media (max-width: 768px) {
+  .modalMain {
+    min-height: 100vh;
+    padding: 2rem;
+  }
+  .selectionBtn {
+    height: 3.75rem;
+    width: 49%;
+    border-radius: 5px;
+    background-color: #ebf9f5;
+    color: var(--app-color);
+    font-size: 1.2rem;
+    font-size: 'Poppins';
+  }
+  .btnSelected {
+    background-color: var(--app-color);
+    color: var(--white);
+  }
+  .btn {
+    height: 3.5rem;
+    width: 7.5rem;
+    font-size: 1rem;
+  }
+  .plainText {
+    font-size: 1rem;
+  }
+  .subHeading {
+    font-size: 1.2rem;
+  }
+  .heading {
+    font-size: 1.67rem;
+  }
+  .email {
+    font-size: 1.2rem;
+    margin-bottom: 1.67rem;
+  }
+  .deleteBtn {
+    width: auto;
+    height: auto;
+  }
+  .modalMain {
+    top: 0;
+    left: 0;
+    transform: translate(0);
+    max-height: 100vh;
+    width: 100vw;
+    box-shadow: 0px;
+    border-radius: 5px;
+    overflow: auto;
+    padding: 2rem;
+  }
+  .statusPopup {
+    width: 100%;
+    min-width: 100%;
+    padding: 1rem;
+    box-shadow: 0px 8px 22px 0px rgba(103, 109, 125, 0.75);
+  }
+  .statusPopupContainer {
+    z-index: 100;
+    position: absolute;
+    left: 50%;
+    bottom: 3rem;
+    transform: translateX(-50%);
+    width: 90vw;
+  }
+  .statusPopupHeading {
+    font-size: 1.33rem;
+  }
+  .statusValue {
+    height: 3rem;
+    font-size: 1.2rem;
+    margin-bottom: 0;
+    @apply flex items-center;
+    padding-left: 0.75rem;
+  }
+  .statusPopupBtn {
+    display: inline-block;
+    width: 100%;
+    height: 3.75rem;
+    background-color: var(--white);
+    box-shadow: 0px 8px 22px 0px rgba(103, 109, 125, 0.75);
+    margin-top: 1.25rem;
+    color: #676d7d;
+    font-size: 1.2rem;
+    font-family: 'Poppins';
+    border-radius: 5px;
+  }
+  .statusValue:not(:last-child) {
+    margin-bottom: 0;
+  }
+  .sliderBtn {
+    display: none;
+  }
+  .modalContainer > div {
+    background-color: #fff;
+  }
+
+  .footerBtns {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .cancelBtn {
+    width: 35%;
+    font-size: 1.33rem;
+    height: 3.75rem;
+  }
+  .saveBtn {
+    width: 60%;
+    font-size: 1.33rem;
+    height: 3.75rem;
+  }
+  .statusPopupOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    overflow: hidden;
+    background-color: #4c4c4c33;
+
+    min-height: 828px;
+    height: 100vh;
+  }
+}

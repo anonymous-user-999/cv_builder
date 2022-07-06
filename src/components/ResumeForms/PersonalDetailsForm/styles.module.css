@@ -1,0 +1,50 @@
+.headerPara {
+  font-size: 1.33rem;
+  color: var(--text-color);
+  font-family: 'Poppins';
+}
+
+.imageContainer {
+  @apply flex items-center;
+  margin: 2.5rem 0;
+}
+
+.image {
+  height: 8rem;
+  width: 8rem;
+  border-radius: 50%;
+  margin-right: 1.5rem;
+}
+
+.uplaodImg {
+  font-size: 1.33rem;
+  color: var(--text-color);
+  cursor: pointer;
+  font-family: 'Poppins';
+}
+
+.inputsWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+}
+
+.additionalInputs {
+  font-size: 1.5rem;
+  color: var(--app-color);
+  font-family: 'Poppins';
+  cursor: pointer;
+  margin-top: 2.5rem;
+}
+
+.btn {
+  height: 4.5rem;
+  background-color: var(--app-color);
+  color: var(--white);
+  padding: 0 3.75rem;
+  font-size: 1.33rem;
+  font-family: 'Poppins';
+  border-radius: 5px;
+  margin-top: 3.3rem;
+  margin-bottom: 4.75rem;
+}

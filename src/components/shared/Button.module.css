@@ -1,0 +1,93 @@
+.container {
+  font-size: 1.25rem;
+  padding: 1.5rem 2.5rem;
+
+  @apply relative flex items-center cursor-pointer rounded font-normal bg-primary-900 border border-primary-900 text-primary-50;
+  @apply transition-colors duration-100 ease-in-out;
+}
+
+.container:hover {
+  background-color: var(--text-color);
+  border-color: var(--text-color);
+  /* @apply bg-primary-700 border-primary-700; */
+  @apply transition-colors duration-100 ease-in-out;
+}
+
+.container:active {
+  top: 1px;
+}
+
+.container:focus {
+  @apply outline-none;
+}
+
+.container.outline {
+  @apply border border-primary-900 bg-transparent text-primary-900;
+}
+
+.container.outline:hover {
+  @apply bg-primary-200;
+}
+
+.container.outline:focus {
+  @apply outline-none;
+}
+
+.container.remove {
+  @apply bg-red-600 border-red-600 text-white;
+}
+
+.container.remove:hover {
+  @apply bg-red-700 border-red-700;
+}
+
+.container.remove:focus {
+  @apply outline-none;
+}
+
+.loading {
+  animation-name: spin;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: spin;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-name: spin;
+  -moz-animation-iteration-count: infinite;
+  -ms-animation-name: spin;
+  -ms-animation-iteration-count: infinite;
+  -o-transition: rotate(3600deg);
+  @apply flex flex-1 items-center justify-center self-center;
+}
+
+@-moz-keyframes spin {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loadingcursor {
+  cursor: wait;
+}
+
+.disabled {
+  cursor: not-allowed;
+}

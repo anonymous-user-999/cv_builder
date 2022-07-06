@@ -1,0 +1,207 @@
+.main {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+}
+
+.formContainer {
+  max-height: 100vh;
+  overflow: auto;
+  padding: 2.5rem 6.25rem;
+}
+
+@media (max-width: 1440px) {
+  .formContainer {
+    padding: 2.5rem 3vw;
+  }
+}
+
+.headerPara {
+  font-size: 1.33rem;
+  color: var(--text-color);
+  font-family: 'Poppins';
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+.form {
+  margin-bottom: 8rem;
+}
+.inputsContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  margin-bottom: 2rem;
+}
+.templateContainer {
+  padding-top: 10vh;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  background-color: #4c5c63;
+}
+.templateCross {
+  position: fixed;
+  top: 2rem;
+  right: 4.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  @apply flex justify-center items-center;
+  height: 3.75rem;
+  width: 3.75rem;
+  color: var(--text-color);
+  font-size: 2rem;
+  background-color: #ebf9f5;
+}
+.templateWrapper {
+  width: fit-content;
+  max-width: 95%;
+  height: 85vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  transition: all ease 0.3s;
+}
+.templateWrapper:hover .expand {
+  display: flex;
+}
+
+.resotre {
+  font-size: 1.33rem;
+  color: #676d7d;
+  font-family: 'Poppins';
+  cursor: pointer;
+}
+
+.expand {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 7.5rem;
+  width: 7.5rem;
+  color: var(--white);
+  background-color: var(--app-color);
+  font-size: 2rem;
+  border-radius: 50%;
+  @apply justify-center items-center;
+  display: none;
+  cursor: pointer;
+}
+.shareBox {
+  width: 25rem;
+  height: 4.33rem;
+  border-radius: 2.2rem;
+  box-shadow: 0px 8px 22px #00b88421;
+  background-color: var(--white);
+  @apply flex justify-between items-center;
+  padding: 0 3.5rem;
+  position: absolute;
+  bottom: 5vh;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.shareDivider {
+  height: 3rem;
+  width: 1px;
+  background-color: #ccf1e6;
+}
+.shareIcon {
+  color: var(--app-color);
+  margin-right: 0.67rem;
+}
+.shareText {
+  cursor: pointer;
+  font-size: 1.33rem;
+  color: var(--text-color);
+  font-family: 'Poppins';
+}
+.btn {
+  height: 4.5rem;
+  width: 10.5rem;
+  border-radius: 5px;
+  font-size: 1.33rem;
+  font-family: 'Poppins';
+}
+
+.cancelBtn {
+  background-color: var(--common-app-text);
+  color: var(--text-color);
+}
+
+.nextBtn {
+  background-color: var(--app-color);
+  color: var(--white);
+}
+.seeTemplate {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .main {
+    grid-template-columns: 1fr;
+  }
+ 
+  .templateCross {
+    top: 2rem;
+    right: 2rem;
+    z-index: 10;
+    height: 3.75rem;
+    width: 3.75rem;
+    font-size: 2rem;
+  }
+  .templateFooter {
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 0;
+  }
+  .restoreContainer {
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+  .seeTemplate {
+    height: 3.75rem;
+    width: 3.75rem;
+    background-color: var(--app-color);
+    color: var(--white);
+    font-size: 1.5rem;
+    @apply flex justify-center items-center;
+    border-radius: 0.7rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .templateCross {
+    position: absolute;
+    height: 2.9rem;
+    width: 2.9rem;
+    font-size: 1.25rem;
+  }
+  .headerPara {
+    display: none;
+  }
+  .inputsContainer {
+    margin-top: 2rem;
+    grid-template-columns: 1fr;
+  }
+  .btn {
+    height: 3.75rem;
+  }
+  .form {
+    margin-bottom: 2rem;
+  }
+  .cancelBtn {
+    width: 35%;
+    margin-right: 0;
+  }
+  .btnsContainer {
+    justify-content: space-between;
+    width: 100%;
+  }
+  .nextBtn {
+    width: 60%;
+  }
+}
